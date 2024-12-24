@@ -1,0 +1,14 @@
+.margin-nav {
+  margin-top: 3%;
+}
+
+.centered-nav {
+  /* background-color: aqua; */
+  justify-content: center;
+}
+
+.disposition {
+  /* background-color: red; */
+  width: 50%;
+  justify-content: space-between;
+}
