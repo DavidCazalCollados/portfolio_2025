@@ -3,13 +3,13 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Hello from './components/hello';
+import Navbar from './components/navbar';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Hello firstName="David" lastName="Cazal" />
+    <Navbar />
   </React.StrictMode>
 );
 
