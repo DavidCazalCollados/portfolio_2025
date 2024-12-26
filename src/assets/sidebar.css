@@ -1,7 +1,7 @@
 .leftnav {
-  height: 100vh;
+  height: 89vh;
   width: 5%;
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
   writing-mode: vertical-rl;
   transform: rotate(180deg);
   /* text-align: center; */

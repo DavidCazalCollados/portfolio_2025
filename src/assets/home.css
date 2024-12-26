@@ -4,31 +4,39 @@
 
 .home-disposition {
   display: grid;
+  gap: 3%;
   grid-template-columns: 1fr 1fr;
   /* grid-template-rows:1fr; */
   /* gap: 20%; */
-  background-color: aquamarine;
+  /* background-color: rgb(220, 162, 17); */
   /* height: 89vh; */
-  width: 90%;
-  margin-left: 5%;
-  margin-right: 5%;
-  height: 100%;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 89vh;
   /* align-items: center; */
   grid-column: 2 / 13;
   grid-row: 2 / 13;
+  align-items: center;
 }
 
 
 .home-left {
-  background-color: red;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  height: 200px;
+  /* background-color: red; */
+  grid-column: 1 / 2;
+  height: 60%;
+  font-size: 2em;
+  line-height: 1;
+  display: flex;
+  align-items: center;
 }
 
 .home-right {
-  background-color: cadetblue;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  height: 200px;
+  /* background-color: cadetblue; */
+  background-image: url('./photos/moi_01.jpg');
+  grid-column: 2 / 3;
+  height: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
