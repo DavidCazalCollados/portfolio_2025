@@ -1,7 +1,14 @@
 import React from 'react';
+import "../assets/home.css"
 
 function Home() {
-  return <h1>Welcome to the Home Page</h1>;
+  return (
+    <div class="home-disposition">
+      <div class="home-left"></div>
+      <div class="home-center"></div>
+      <div class="home-right"></div>
+    </div>
+  );
 }
 
 export default Home;
