@@ -4,8 +4,7 @@ import "../assets/home.css"
 function Home() {
   return (
     <div class="home-disposition">
-      <div class="home-left"></div>
-      <div class="home-center"></div>
+      <div class="home-left"><div>bonjour</div></div>
       <div class="home-right"></div>
     </div>
   );

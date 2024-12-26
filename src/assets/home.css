@@ -1,28 +1,34 @@
-.html,body {
+/* .html,body {
   overflow: hidden;
-}
+} */
 
 .home-disposition {
   display: grid;
-  grid-template-columns: 1fr 3fr 3fr;
-  gap: 20%;
+  grid-template-columns: 1fr 1fr;
+  /* grid-template-rows:1fr; */
+  /* gap: 20%; */
   background-color: aquamarine;
-  height: 89vh;
-  width: 100%;
-  align-items: center;
+  /* height: 89vh; */
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 100%;
+  /* align-items: center; */
+  grid-column: 2 / 13;
+  grid-row: 2 / 13;
 }
+
 
 .home-left {
-  background-color: blue;
-  height: 100%;
-}
-
-.home-center {
   background-color: red;
+  grid-column-start: 1;
+  grid-column-end: 2;
   height: 200px;
 }
 
 .home-right {
   background-color: cadetblue;
+  grid-column-start: 2;
+  grid-column-end: 3;
   height: 200px;
 }
