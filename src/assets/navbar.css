@@ -1,5 +1,7 @@
 .margin-nav {
   /* margin-top: 3%; */
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
 .centered-nav {
@@ -15,7 +17,7 @@
 
 
 .topnav {
-  background-color:brown;
+  /* background-color:brown; */
   width: 100%;
   /* width: 100%; */
 }
