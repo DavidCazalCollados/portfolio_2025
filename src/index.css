@@ -2,6 +2,7 @@
 
 :root {
   --background-color: #ece7e1;
+  --font-color: #303030;
 }
 
 body {
@@ -12,6 +13,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--background-color);
   height: 100%;
+  color: var(--font-color);
 }
 
 code {

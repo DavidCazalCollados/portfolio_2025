@@ -3,22 +3,22 @@ import "../assets/home.css"
 
 function Home() {
   return (
-    <div class="home-disposition">
-      <div class="home-left">
-        <div class="presentation">
+    <div className="home-disposition">
+      <div className="home-left">
+        <div className="presentation">
           <p>
             Hi there, I'm David!
           </p>
         </div>
-        <div class="separation"></div>
-        <div class="presentation-content">
+        <div className="separation"></div>
+        <div className="presentation-content">
           <p>
             A front-end developer turning creativity into interactive web experiences.
           </p>
         </div>
       </div>
-      <div class="home-right">
-        <div class="pic"></div>
+      <div className="home-right">
+        <div className="pic"></div>
       </div>
     </div>
   );

@@ -3,7 +3,7 @@ import "../assets/contact.css"
 
 function Contact() {
   return (
-    <div class="contact-style">
+    <div className="contact-style">
       Welcome to the Contact Page
     </div>
   );

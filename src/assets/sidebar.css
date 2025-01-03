@@ -2,9 +2,26 @@
   top: 0;
   height: 100%;
   width: 5%;
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
   writing-mode: vertical-rl;
   transform: rotate(180deg);
   /* text-align: center; */
   position: absolute;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.scrolling-wrapper {
+  text-decoration: none;
+}
+
+.scrolling-text {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.scroll-item {
+  text-decoration: none;
+  color: var(--font-color);
 }
