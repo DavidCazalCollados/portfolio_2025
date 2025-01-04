@@ -1,5 +1,6 @@
 import React from "react";
 import '../assets/sidebar.css'
+import { motion } from "motion/react"
 
 
 class Sidebar extends React.Component {
@@ -14,15 +15,35 @@ class Sidebar extends React.Component {
       <div className="leftnav">
         <ul>
           {info.map((item, index) => (
-            <li>
-              <a className="scroll-item" key={index} href={item.url} target="_blank" rel="noopener noreferrer">{item.label}</a>
+            <li key={`first-list-${index}`}>
+              <motion.a
+              whileHover={{ scale: 1.3 }}
+              whileTap={{ scale: 0.95 }}
+              onHoverStart={() => console.log('hover started!')}
+              className="scroll-item"
+              href={item.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              >
+                {item.label}
+              </motion.a>
             </li>
           ))}
         </ul>
         <ul aria-hidden="true">
           {info.map((item, index) => (
-            <li>
-              <a className="scroll-item" key={index} href={item.url} target="_blank" rel="noopener noreferrer">{item.label}</a>
+            <li key={`second-list-${index}`}>
+              <motion.a
+              whileHover={{ scale: 1.3  }}
+              whileTap={{ scale: 0.95 }}
+              onHoverStart={() => console.log('hover started!')}
+              className="scroll-item"
+              href={item.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              >
+                {item.label}
+              </motion.a>
             </li>
           ))}
         </ul>

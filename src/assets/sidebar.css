@@ -19,6 +19,7 @@
 .scroll-item {
   text-decoration: none;
   color: var(--font-color);
+  display: inline-block;
   /* background-color: blue; */
   /* background-color: cadetblue; */
 }
