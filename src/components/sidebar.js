@@ -1,6 +1,5 @@
 import React from "react";
 import '../assets/sidebar.css'
-import { motion } from "motion/react"
 
 
 class Sidebar extends React.Component {
