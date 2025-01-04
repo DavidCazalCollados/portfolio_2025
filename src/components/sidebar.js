@@ -9,7 +9,7 @@ class Sidebar extends React.Component {
       { label: 'GitHub', url: 'https://github.com/DavidCazalCollados' },
       { label: 'LinkedIn', url: 'https://linkedin.com/in/david-cazal' },
       { label: 'Email', url: 'mailto:da.cazal95@gmail.com' },
-      { label: 'Téléphone', url: 'tel:+14388892467' }
+      { label: 'Telephone', url: 'tel:+14388892467' }
     ];
     return (
       <div className="leftnav">
