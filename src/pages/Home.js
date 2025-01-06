@@ -1,9 +1,10 @@
 import React from 'react';
 import "../assets/home.css"
+import "../assets/general_disposition.css"
 
 function Home() {
   return (
-    <div className="home-disposition">
+    <div className="general-disposition home-home">
       <div className="home-left">
         <div className="presentation">
           <p>

@@ -6,10 +6,10 @@ import { motion } from "motion/react"
 class Sidebar extends React.Component {
   render() {
     const info = [
-      { label: 'GitHub', url: 'https://github.com/DavidCazalCollados' },
-      { label: 'LinkedIn', url: 'https://linkedin.com/in/david-cazal' },
-      { label: 'Email', url: 'mailto:da.cazal95@gmail.com' },
-      { label: 'Telephone', url: 'tel:+14388892467' }
+      { label: 'GITHUB', url: 'https://github.com/DavidCazalCollados' },
+      { label: 'LINKEDIN', url: 'https://linkedin.com/in/david-cazal' },
+      { label: 'EMAIL', url: 'mailto:da.cazal95@gmail.com' },
+      { label: 'PHONE', url: 'tel:+14388892467' }
     ];
     return (
       <div className="leftnav">

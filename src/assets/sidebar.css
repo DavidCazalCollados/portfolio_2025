@@ -20,6 +20,8 @@
   text-decoration: none;
   color: var(--font-color);
   display: inline-block;
+  letter-spacing: 0.6rem;
+  font-size: 0.7em;
   /* background-color: blue; */
   /* background-color: cadetblue; */
 }

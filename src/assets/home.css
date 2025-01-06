@@ -2,14 +2,10 @@
   overflow: hidden;
 } */
 
-.home-disposition {
-  display: flex;
+
+.home-home {
   gap: 3%;
-  /* background-color: rgb(220, 162, 17); */
-  height: 89vh;
-  width: 70%;
-  margin-left: 15%;
-  margin-right: 15%;
+  display: flex;
   align-items:center;
 }
 

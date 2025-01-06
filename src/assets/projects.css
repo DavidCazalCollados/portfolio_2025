@@ -1,0 +1,24 @@
+.project-disposition {
+  display: flex;
+  justify-content: space-around;
+  gap: 3%;
+}
+
+.work-infos {
+  color: var(--font-color);
+  height: 100%;
+  width: 100%;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.work-list {
+  height: 100%;
+  width: 100%;
+  background-color: blue;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
