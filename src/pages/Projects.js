@@ -1,8 +1,20 @@
 import React from 'react';
 import "../assets/projects.css"
 import "../assets/general_disposition.css"
+import filmDashImagePhone from '../assets/photos/FILMDASH_SCREEN.png';
+import filmDashVideoPhone from '../assets/videos/SCREEN_REC_FILMDASH.mp4';
+import filmDashImage from '../assets/photos/FILMDASH_SCREEN_LAPTOP.png';
+import filmDashVideo from '../assets/videos/FILMDASH_LAPTOP.mov';
+import HoverVideoPlayer from 'react-hover-video-player';
 
 function Projects() {
+  const projectHover = [
+    {
+      projectName: 'Filmdash',
+      projectImage: "../assets/photos/FILMDASH_SCREEN.jpg",
+      projectVideo: "../assets/videos/SCREEN_REC_FILMDASH.mp4"
+    }
+  ];
   return(
     <div className="general-disposition project-disposition">
       <div className="work-infos">
@@ -16,12 +28,33 @@ function Projects() {
         </p>
       </div>
       <div className="work-list">
-        <video
-          poster="../assets/photos/FILMDASH_SCREEN.png"
-          onMouseOver={event => event.target.play()}
-          onMouseOut={event => event.target.pause()}
-          src="../assets/videos/SCREEN_REC_FILMDASH.mp4" >
-        </video>
+        <div className='video-container'>
+          <HoverVideoPlayer
+          // hoverOverlay={
+          //   <div className="hover-overlay">
+          //     <h1>Video Title</h1>
+          //     <p>
+          //       Here is a short description of the video. You can still see the video
+          //       playing underneath this overlay.
+          //       <a href="/video-page">Click here to read more</a>
+          //     </p>
+          //   </div>
+          // }
+            videoSrc={filmDashVideo}
+            pausedOverlay={
+              <img
+                src={filmDashImage}
+                alt='Filmdash: homepage'
+                className="filmdash-project"
+              />
+            }
+            loadingOverlay={
+              <div className="loading-overlay">
+                <div className="loading-spinner" />
+              </div>
+            }
+          />
+        </div>
       </div>
     </div>
   )
