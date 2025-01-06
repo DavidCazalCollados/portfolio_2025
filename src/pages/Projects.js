@@ -17,29 +17,30 @@ function Projects() {
   ];
   return(
     <div className="general-disposition project-disposition">
-      <div className="work-infos">
-        <h5>PROJECTS</h5>
-        <p>In this section, you'll find my final project,
-          which I worked on extensively during my front-end development training at Le Wagon.
-          This project highlights my skills in building modern and functional interfaces,
-          while adhering to best web development practices.
-          Feel free to explore the details of the project, including the technologies used
-          and the challenges I encountered throughout its development.
-        </p>
+      <div className='project-entete'>
+        <h2>PROJECTS</h2>
       </div>
-      <div className="work-list">
+      <div className='project-container'>
+        {/* <div className='project-infos'>
+          <p>
+            <strong>FilmDash</strong> is a mobile-first web app that helps professionals
+            and students quickly find personalized movie recommendations based on
+            their streaming subscriptions and location, reducing decision fatigue
+            when choosing what to watch.
+          </p>
+        </div> */}
         <div className='video-container'>
           <HoverVideoPlayer
-          // hoverOverlay={
-          //   <div className="hover-overlay">
-          //     <h1>Video Title</h1>
-          //     <p>
-          //       Here is a short description of the video. You can still see the video
-          //       playing underneath this overlay.
-          //       <a href="/video-page">Click here to read more</a>
-          //     </p>
-          //   </div>
-          // }
+          hoverOverlay={
+            <div className="hover-overlay">
+              <h1>Video Title</h1>
+              <p>
+                Here is a short description of the video. You can still see the video
+                playing underneath this overlay.
+                <a href="/video-page">Click here to read more</a>
+              </p>
+            </div>
+          }
             videoSrc={filmDashVideo}
             pausedOverlay={
               <img

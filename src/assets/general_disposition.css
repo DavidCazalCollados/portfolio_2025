@@ -1,7 +1,8 @@
 .general-disposition {
   /* background-color: rgb(220, 162, 17); */
-  height: 89vh;
+  height: 74.8vh;
   width: 70%;
   margin-left: 15%;
   margin-right: 15%;
+  color: var(--font-color);
 }
