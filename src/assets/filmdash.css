@@ -1,0 +1,21 @@
+.filmdash h1 {
+  position: absolute;
+  /* background-color: aqua; */
+  font-family: "Yeseva One", serif;
+  color: white;
+  right: 45%;
+  top: 35%;
+  z-index: 10;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+.filmdash h4 {
+  position: absolute;
+  /* background-color: blue; */
+  color: white;
+  font-family: "Yeseva One", serif;
+  z-index: 10;
+  right: 41.5%;
+  top: 45%;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}

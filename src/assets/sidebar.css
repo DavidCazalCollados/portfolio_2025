@@ -2,7 +2,6 @@
   top: 0;
   /* height: 100%; */
   width: 5%;
-  /* background-color: aquamarine; */
   writing-mode: vertical-rl;
   transform: rotate(180deg);
   /* text-align: center; */
@@ -14,6 +13,7 @@
   text-align: center;
   gap: 7rem;
   height: 100%;
+  z-index: 15;
 }
 
 .scroll-item {
@@ -24,6 +24,10 @@
   font-size: 0.7em;
   /* background-color: blue; */
   /* background-color: cadetblue; */
+}
+
+li a {
+  mix-blend-mode: exclusion;
 }
 
 .leftnav ul {
