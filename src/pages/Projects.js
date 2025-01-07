@@ -6,6 +6,7 @@ import filmDashVideoPhone from '../assets/videos/SCREEN_REC_FILMDASH.mp4';
 import filmDashImage from '../assets/photos/FILMDASH_SCREEN_LAPTOP.png';
 import filmDashVideo from '../assets/videos/FILMDASH_LAPTOP.mov';
 import HoverVideoPlayer from 'react-hover-video-player';
+import { motion } from "motion/react"
 
 function Projects() {
   const projectHover = [
@@ -32,13 +33,26 @@ function Projects() {
         <div className='video-container'>
           <HoverVideoPlayer
           hoverOverlay={
-            <div className="hover-overlay">
-              <h1>Video Title</h1>
-              <p>
-                Here is a short description of the video. You can still see the video
-                playing underneath this overlay.
-                <a href="/video-page">Click here to read more</a>
+            <div className="hover-overlay description-hover">
+              <h1><motion.a
+                  whileHover={{
+                    scale: 1.15,
+                    filter: "brightness(100)",
+                   }}
+                  whileTap={{ scale: 0.95 }}
+                  onHoverStart={() => console.log('hover started!')}
+                  rel="noopener noreferrer"
+                  href='projects/filmdash'>
+                    FilmDash
+                  </motion.a>
+              </h1>
+              {/* <p>
+                FilmDash is a mobile-first web app that helps users quickly
+                discover personalized movie recommendations based on their
+                subscriptions and location, minimizing decision fatigue when
+                choosing what to watch.
               </p>
+              <a href="/video-page">Click here to read more</a> */}
             </div>
           }
             videoSrc={filmDashVideo}
