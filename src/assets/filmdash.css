@@ -14,6 +14,9 @@
 
 .about {
   margin-top: 10%;
+}
+
+.about p{
   font-weight: 300;
   font-size: 2.5em;
   text-transform: uppercase;

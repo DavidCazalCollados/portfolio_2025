@@ -13,7 +13,7 @@ function Filmdash() {
       </div>
       <div className='general-disposition'>
           <div className='about'>
-              <p>About</p>
+            <p>About</p>
           </div>
         <div className='intro-filmdash'>
           <div className='presentation-picture-filmdash'>
