@@ -80,6 +80,7 @@
   background-size: cover;
   filter: grayscale(100%);
   border-radius: 5px;
+  clip-path: polygon(0 0, 75% 0%, 100% 21%, 100% 79%, 26% 100%, 0 71%);
 }
 
 .development-text-filmdash {
@@ -94,7 +95,7 @@
   margin: 0;
   padding: 0;
   text-align: justify;
-  align-items: end;
+  align-items: center;
 }
 
 .development-text-filmdash p {
@@ -103,5 +104,5 @@
 
 .border-development-filmdash {
   border: 0.5px black solid;
-  width: 60%;
+  width: 45%;
 }
