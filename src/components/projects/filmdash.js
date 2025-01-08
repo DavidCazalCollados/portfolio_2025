@@ -47,6 +47,17 @@ function Filmdash() {
           <div className='development-picture-filmdash'>
           </div>
         </div>
+        <div className='function-filmdash'>
+          <div className='phones-image-function-filmdash'>
+            <div className='phone-one'></div>
+            <div className='phone-two'></div>
+            <div className='phone-three'></div>
+            <div className='phone-four'></div>
+          </div>
+          <div className='text-function-filmdash'>
+
+          </div>
+        </div>
       </div>
     </div>
   )

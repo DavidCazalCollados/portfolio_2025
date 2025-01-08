@@ -79,7 +79,6 @@
   background-position: center;
   background-size: cover;
   filter: grayscale(100%);
-  border-radius: 5px;
   clip-path: polygon(0 0, 75% 0%, 100% 21%, 100% 79%, 26% 100%, 0 71%);
 }
 
@@ -105,4 +104,42 @@
 .border-development-filmdash {
   border: 0.5px black solid;
   width: 45%;
+}
+
+.phones-image-function-filmdash {
+  /* background-color: aquamarine; */
+  /* width: 100%; */
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  gap: 2%;
+  margin-top: 10%;
+  height: 57vh;
+}
+
+.phone-one, .phone-two, .phone-three, .phone-four {
+  height: 100%;
+  width: 100%;
+  /* background-color: brown; */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  opacity: 90%;
+}
+
+.phone-one {
+  background-image: url('./photos/filmdash_01.jpg');
+}
+
+.phone-two {
+  background-image: url('./photos/filmdash_02.jpg');
+}
+
+.phone-three {
+  background-image: url('./photos/filmdash_03.jpg');
+}
+
+.phone-four {
+  background-image: url('./photos/filmdash_04.jpg');
 }
