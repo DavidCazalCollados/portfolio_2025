@@ -35,6 +35,18 @@ function Filmdash() {
             </div> */}
           </div>
         </div>
+        <div className='development-filmdash'>
+          <div className='development-text-filmdash'>
+            <p>
+              The project was developed as a final
+              project during a 2-month coding bootcamp at Le Wagon, where it was chosen
+              from a pool of ideas and built by a team of 3 developers over a 2-week agile sprint.
+            </p>
+            <div className='border-development-filmdash'></div>
+          </div>
+          <div className='development-picture-filmdash'>
+          </div>
+        </div>
       </div>
     </div>
   )
