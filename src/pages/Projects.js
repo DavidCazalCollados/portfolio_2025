@@ -22,14 +22,7 @@ function Projects() {
         <h2>PROJECTS</h2>
       </div>
       <div className='project-container'>
-        {/* <div className='project-infos'>
-          <p>
-            <strong>FilmDash</strong> is a mobile-first web app that helps professionals
-            and students quickly find personalized movie recommendations based on
-            their streaming subscriptions and location, reducing decision fatigue
-            when choosing what to watch.
-          </p>
-        </div> */}
+
         <div className='video-container'>
           <HoverVideoPlayer
           hoverOverlay={
@@ -46,13 +39,6 @@ function Projects() {
                     FilmDash
                   </motion.a>
               </h1>
-              {/* <p>
-                FilmDash is a mobile-first web app that helps users quickly
-                discover personalized movie recommendations based on their
-                subscriptions and location, minimizing decision fatigue when
-                choosing what to watch.
-              </p>
-              <a href="/video-page">Click here to read more</a> */}
             </div>
           }
             videoSrc={filmDashVideo}

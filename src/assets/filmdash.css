@@ -2,6 +2,9 @@
   /* background-color: rgb(217, 255, 255); */
 }
 
+
+/* Banner */
+
 .banner-filmdash h1 {
   font-family: "Yeseva One", serif;
   color: white;
@@ -12,15 +15,22 @@
   font-family: "Yeseva One", serif;
 }
 
+
+/* ABOUT SECTION */
+
 .about {
   margin-top: 10%;
 }
+
+/* Title About*/
 
 .about p{
   font-weight: 300;
   font-size: 2.5em;
   text-transform: uppercase;
 }
+
+/* Content ABOUT SECTION */
 
 .intro-filmdash {
   display: flex;
@@ -37,7 +47,7 @@
   background-size: cover;
   height: 100%;
   width: 30%;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .text-presentation-filmdash {
@@ -62,6 +72,9 @@
 .begin-presentation-filmdash p {
   margin: 0;
 }
+
+
+/* DEVELOPMENT SECTION */
 
 .development-filmdash {
   display: flex;
@@ -106,40 +119,55 @@
   width: 45%;
 }
 
+
+/* FUNCTION SECTION */
+
 .phones-image-function-filmdash {
-  /* background-color: aquamarine; */
-  /* width: 100%; */
+  background-color: aquamarine;
   display: flex;
   justify-content: center;
   border-radius: 10px;
-  gap: 2%;
-  margin-top: 10%;
-  height: 57vh;
+  gap: 10%;
+  margin-top: 15%;
+  height: 48vh;
 }
 
-.phone-one, .phone-two, .phone-three, .phone-four {
+.preferences, .selection, .watchlist {
   height: 100%;
   width: 100%;
   /* background-color: brown; */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border-radius: 10px;
-  opacity: 90%;
+  border-radius: 7px;
+  opacity: 100%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: transform 0.3s ease;
 }
 
-.phone-one {
-  background-image: url('./photos/filmdash_01.jpg');
+.preferences:hover,
+.selection:hover,
+.watchlist:hover {
+  transform: scale(1.05);
 }
 
-.phone-two {
-  background-image: url('./photos/filmdash_02.jpg');
+.preferences-video-container video,
+.selection-video-container video,
+.watchlist-video-container video {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px; /* Arrondi de la vidéo */
+  object-fit: cover;
+  transition: transform 0.3s ease;
 }
 
-.phone-three {
-  background-image: url('./photos/filmdash_03.jpg');
-}
-
-.phone-four {
-  background-image: url('./photos/filmdash_04.jpg');
+.preferences-video-container:hover video,
+.selection-video-container:hover video,
+.watchlist-video-container:hover video {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px; /* Arrondi de la vidéo */
+  object-fit: cover;
+  filter: brightness(0.8) contrast(1) saturate(0.8);
+  transform: scale(1.05);
 }
