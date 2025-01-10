@@ -103,7 +103,15 @@ function Filmdash() {
             <div className='phone-three'></div> */}
           </div>
           <div className='text-function-filmdash'>
-
+            <div className='first-function-filmdash'>
+              <p>First, select your preferred format, duration, genre, and era.</p>
+            </div>
+            <div className='second-function-filmdash'>
+              <p>Then, make your choice!</p>
+            </div>
+            <div className='third-function-filmdash'>
+              <p>Or save it for later...</p>
+            </div>
           </div>
         </div>
 

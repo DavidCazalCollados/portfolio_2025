@@ -1,6 +1,7 @@
 .margin-nav {
   padding-top: 3%;
   padding-bottom: 3%;
+  z-index: 1000;
 }
 
 .centered-nav {
