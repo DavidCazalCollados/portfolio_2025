@@ -3,6 +3,7 @@ import HoverVideoPlayer from 'react-hover-video-player';
 import '../../assets/banner.css';
 import '../../assets/filmdash.css';
 import "../../assets/general_disposition.css";
+import Caroussel from '../Caroussel';
 
 import preferencesImage from "../../assets/photos/screen_function/preferences_photo.jpg";
 import preferencesVideo from "../../assets/photos/screen_function/preferences_video.mp4";
@@ -74,7 +75,9 @@ function Filmdash() {
           <div className='development-picture-filmdash'>
           </div>
         </div>
-
+        <div className='caroussel-container-filmdash'>
+          <Caroussel />
+        </div>
         <div className='function-filmdash'>
           <div className='phones-image-function-filmdash'>
             {filmdashHover.map((item, index) => (
@@ -98,13 +101,10 @@ function Filmdash() {
                   />
                 </div>
               ))}
-            {/* <div className='phone-one'></div>
-            <div className='phone-two'></div>
-            <div className='phone-three'></div> */}
           </div>
           <div className='text-function-filmdash'>
             <div className='first-function-filmdash'>
-              <p>First, select your preferred format, duration, genre, and era.</p>
+              <p>First, select your preferences.</p>
             </div>
             <div className='second-function-filmdash'>
               <p>Then, make your choice!</p>
