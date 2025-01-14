@@ -8,8 +8,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Projects from './pages/Projects';
 import Filmdash from './components/projectsInside/FilmDash';
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+
 
 
 function App() {
