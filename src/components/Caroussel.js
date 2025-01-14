@@ -1,8 +1,8 @@
 import React from 'react';
 import '../assets/caroussel.css';
-import slideImage1 from "../assets/photos/projector.jpg";
-import slideImage2 from "../assets/photos/filmdash_02.jpg";
-import slideImage3 from "../assets/photos/filmdash_03.jpg";
+import slideImage1 from "../assets/photos/connexion.jpg";
+import slideImage2 from "../assets/photos/earth.jpg";
+import slideImage3 from "../assets/photos/streamings.jpg";
 
 const Caroussel = () => {
   return (

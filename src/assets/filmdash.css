@@ -124,9 +124,32 @@
 
 /* FUNCTION SECTION */
 
+.function-title-filmdash {
+  margin-top: 20%;
+  color: var(--font-color);
+  text-align: center;
+}
+
+/* Title Function*/
+
+.function-title-filmdash p{
+  font-weight: 300;
+  font-size: 2.5em;
+  text-transform: uppercase;
+}
+
+/* Caroussel settings */
+
 .caroussel-container-filmdash {
-  background-color: blueviolet;
-  margin-top: 15%;
+  margin-top: 8%;
+  position: relative;
+}
+
+.border-caroussel {
+  height: 40%;
+  width: 35%;
+  border: solid rgb(40, 40, 40) 1px;
+  position: absolute;
 }
 
 .phones-image-function-filmdash {
@@ -142,7 +165,7 @@
 .preferences, .selection, .watchlist {
   height: 100%;
   width: 100%;
-  background-color: brown;
+  /* background-color: brown; */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

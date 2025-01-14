@@ -75,7 +75,12 @@ function FilmDash() {
           <div className='development-picture-filmdash'>
           </div>
         </div>
+
+        <div className='function-title-filmdash'>
+          <p>How do you use it?</p>
+        </div>
         <div className='caroussel-container-filmdash'>
+          <div className='border-caroussel'></div>
           <Caroussel />
         </div>
         <div className='function-filmdash'>

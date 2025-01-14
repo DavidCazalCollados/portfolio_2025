@@ -1,5 +1,5 @@
 .caroussel-img {
   height: 80vh;
-  object-fit: contain;
-  object-position: center;
+  object-fit: cover;
+  padding: 2%;
 }
