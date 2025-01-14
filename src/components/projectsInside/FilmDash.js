@@ -14,7 +14,7 @@ import watchlistVideo from "../../assets/photos/screen_function/watchlist_video.
 
 import React from 'react';
 
-function Filmdash() {
+function FilmDash() {
   const filmdashHover = [
     {
       sectionName: "preferences",
@@ -119,4 +119,4 @@ function Filmdash() {
     </div>
   )
 }
-export default Filmdash;
+export default FilmDash;

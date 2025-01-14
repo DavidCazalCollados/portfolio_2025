@@ -1,5 +1,6 @@
 .filmdash {
   /* background-color: rgb(217, 255, 255); */
+  font-family: 'Fira Sans', sans-serif;
 }
 
 
@@ -20,6 +21,7 @@
 
 .about {
   margin-top: 10%;
+  color: var(--font-color);
 }
 
 /* Title About*/
@@ -124,6 +126,7 @@
 
 .caroussel-container-filmdash {
   background-color: blueviolet;
+  margin-top: 15%;
 }
 
 .phones-image-function-filmdash {
