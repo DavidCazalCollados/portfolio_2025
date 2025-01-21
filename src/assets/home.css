@@ -1,25 +1,21 @@
-/* .html,body {
-  overflow: hidden;
-} */
 
 
 .home-home {
-  gap: 3%;
+  background-color: red;
+  height: 89vh;
   display: flex;
-  align-items:center;
-  padding-top: 5%;
 }
 
 
 .home-left {
-  /* background-color: red; */
+  background-color: darkgoldenrod;
   display: flex;
   flex-direction: column;
   font-family: 'Yeseva One', serif;
-  height: 60%;
-  width: 50%;
+  width: 40%;
   color: #1a1818;
-  justify-content: space-between;
+
+  /* justify-content: space-between; */
 }
 
 
@@ -35,20 +31,12 @@
   margin: 0;
 }
 
-/* .separation {
-  grid-row: 2 / 3;
-  grid-column: 1 / 2;
-  border-bottom: 1px solid #1a1818;
-  width: 50%;
-  height: 30%;
-} */
-
 .home-right {
-  /* display: flex;
-  flex-direction: column;*/
-  font-family: 'Yeseva One', serif;
-  height: 60%;
-  width: 50%;
+  height: 100%;
+  width: 60%;
+  stroke: #bf4d00;
+  /* padding: 4%; */
+  background-color: aqua;
 }
 
 .presentation-content {
