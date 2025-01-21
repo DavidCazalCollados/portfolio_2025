@@ -1,21 +1,253 @@
-.filmdash h1 {
-  position: absolute;
-  /* background-color: aqua; */
-  font-family: "Yeseva One", serif;
-  color: white;
-  right: 45%;
-  top: 35%;
-  z-index: 10;
-  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+.filmdash {
+  /* background-color: rgb(217, 255, 255); */
+  /* font-family: 'Fira Sans', sans-serif; */
 }
 
-.filmdash h4 {
-  position: absolute;
-  /* background-color: blue; */
-  color: white;
+
+/* Banner */
+
+.banner-filmdash h1 {
   font-family: "Yeseva One", serif;
-  z-index: 10;
-  right: 41.5%;
-  top: 45%;
-  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  color: rgb(237, 237, 237);
+}
+
+.banner-filmdash h4 {
+  color: rgb(237, 237, 237);
+  font-family: "Yeseva One", serif;
+}
+
+
+/* ABOUT SECTION */
+
+.about {
+  margin-top: 10%;
+  color: var(--font-color);
+}
+
+/* Title About*/
+
+.about p{
+  font-weight: 300;
+  font-size: 2.5em;
+  text-transform: uppercase;
+}
+
+/* Content ABOUT SECTION */
+
+.intro-filmdash {
+  display: flex;
+  gap: 3%;
+  margin-top: 7%;
+  height: 55vh;
+}
+
+.presentation-picture-filmdash {
+  background: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.3)), url('./photos/FILMDASH_SCREEN.png');
+  border-radius: 5px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 30%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.text-presentation-filmdash {
+  /* background-color: rgb(190, 222, 249); */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+}
+
+.begin-presentation-filmdash {
+  /* background-color: brown; */
+  font-size: 2em;
+  font-weight: 200;
+  border-top: 1px var(--font-color) solid;
+  border-bottom: 1px var(--font-color) solid;
+  padding: 2%;
+}
+
+.begin-presentation-filmdash p {
+  margin: 0;
+}
+
+
+/* DEVELOPMENT SECTION */
+
+.development-filmdash {
+  display: flex;
+  gap: 5%;
+  margin-top: 10%;
+  height: 45vh;
+
+}
+
+.development-picture-filmdash {
+  background-image: url('./photos/web_work.jpg');
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: grayscale(100%) brightness(0.88);
+  clip-path: polygon(0 0, 75% 0%, 100% 21%, 100% 79%, 26% 100%, 0 71%);
+}
+
+.development-text-filmdash {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* background-color: blue; */
+  justify-content: space-between;
+  font-size: 1.5em;
+  font-weight: 200;
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+  align-items: center;
+}
+
+.development-text-filmdash p {
+  margin: 0;
+}
+
+.border-development-filmdash {
+  border: 0.5px black solid;
+  width: 45%;
+}
+
+
+/* FUNCTION SECTION */
+
+.function-title-filmdash {
+  margin-top: 20%;
+  color: var(--font-color);
+  text-align: center;
+}
+
+/* Title Function*/
+
+.function-title-filmdash p{
+  font-weight: 300;
+  font-size: 2.5em;
+  text-transform: uppercase;
+}
+
+/* Caroussel settings */
+
+.caroussel-container-filmdash {
+  margin-top: 8%;
+  position: relative;
+}
+
+.border-caroussel {
+  height: 40%;
+  width: 35%;
+  border: solid rgb(40, 40, 40) 1px;
+  position: absolute;
+}
+
+.phones-image-function-filmdash {
+  /* background-color: aquamarine; */
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  gap: 10%;
+  margin-top: 15%;
+  height: 48vh;
+}
+
+.preferences, .selection, .watchlist {
+  height: 100%;
+  width: 100%;
+  /* background-color: brown; */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 7px;
+  opacity: 100%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+/* .preferences-video-container,
+.selection-video-container,
+.watchlist-video-container {
+  height: 20px;
+  width: 50%;
+  display: grid;
+} */
+
+.preferences-video-container video,
+.selection-video-container video,
+.watchlist-video-container video {
+  width: 100%;
+  height: 48vh;
+  border-radius: 5px; /* Arrondi de la vidéo */
+  object-fit: cover;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.preferences-video-container:hover video,
+.selection-video-container:hover video,
+.watchlist-video-container:hover video {
+  width: 100%;
+  height: 48vh;
+  border-radius: 5px; /* Arrondi de la vidéo */
+  object-fit: cover;
+  filter: brightness(0.7) contrast(1) saturate(0.8);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.text-function-filmdash {
+  display: flex;
+  margin-top: 3%;
+  /* background-color: brown; */
+  width: 100%;
+  height: 13vh;
+}
+
+.first-function-filmdash,
+.second-function-filmdash,
+.third-function-filmdash {
+  text-align: center;
+  /* text-transform: uppercase; */
+  font-weight: 300;
+  height: 100%;
+  border: 0.8px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-function-filmdash p,
+.second-function-filmdash p,
+.third-function-filmdash p {
+  display: inline-block;
+  width: 100%;
+  letter-spacing: 0.1em;
+  margin: 0;
+  padding: 0;
+  /* background-color: blue; */
+}
+
+.first-function-filmdash {
+ /* background-color: blueviolet; */
+ margin-right: 10%;
+ margin-left: 10.5%;
+ width: 19.5%;
+}
+
+.second-function-filmdash {
+  margin-right: 10%;
+  width: 19.8%;
+}
+
+.third-function-filmdash {
+  width: 19.65%;
 }

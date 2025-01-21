@@ -7,7 +7,8 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Projects from './pages/Projects';
-import Filmdash from './components/projects/filmdash'
+import Filmdash from './components/projectsInside/FilmDash';
+
 
 
 function App() {
