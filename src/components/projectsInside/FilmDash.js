@@ -80,7 +80,8 @@ function FilmDash() {
           <p>How do you use it?</p>
         </div>
         <div className='caroussel-container-filmdash'>
-          <div className='border-caroussel'></div>
+          <div className='border-caroussel-left'></div>
+          <div className='border-caroussel-right'></div>
           <Caroussel />
         </div>
         <div className='function-filmdash'>
