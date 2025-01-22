@@ -27,7 +27,8 @@ function Projects() {
           <HoverVideoPlayer
           hoverOverlay={
             <div className="hover-overlay description-hover">
-              <h1><motion.a
+              <h1>
+                <motion.a
                   whileHover={{
                     scale: 1.15,
                     filter: "brightness(100)",
@@ -37,7 +38,7 @@ function Projects() {
                   rel="noopener noreferrer"
                   href='projects/filmdash'>
                     FilmDash
-                  </motion.a>
+                </motion.a>
               </h1>
             </div>
           }

@@ -8,7 +8,12 @@ import moi from '../assets/photos/moi_01.jpg'
 function Home() {
 
   return (
-    <div className="general-disposition home-home">
+    <motion.div
+      className="general-disposition home-home"
+      initial={{ translateY: 700 }}
+      animate={{ translateY: 1 }}
+      exit={{ translateY: 700 }}
+    >
       <div className="home-left">
         <div className="presentation">
           <p>
@@ -25,7 +30,7 @@ function Home() {
         {/* <img src={portrait01} alt='' width="100%" height="100%"/> */}
         {/* <img className='photo-home' src={moi} alt='Picture of David Cazal'/> */}
       </div>
-    </div>
+    </motion.div>
   );
 }
 
