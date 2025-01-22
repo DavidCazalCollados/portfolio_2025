@@ -14,20 +14,29 @@ const Caroussel = () => {
       </div>
       <div className="carousel-inner">
         <div className="carousel-item active">
-          <img src={slideImage1} className="d-block w-100 caroussel-img" alt="..."/>
+          <div className='caroussel-test'>
+            <h3 className='text-caroussel'>Create Your Account</h3>
+          </div>
+          <img src={slideImage1} className="d-block w-100 caroussel-img img-one" alt="..."/>
         </div>
         <div className="carousel-item">
-          <img src={slideImage2} className="d-block w-100 caroussel-img" alt="..."/>
+          <div className='caroussel-test'>
+            <h3 className='text-caroussel'>Choose Your Country</h3>
+          </div>
+          <img src={slideImage2} className="d-block w-100 caroussel-img img-two" alt="..."/>
         </div>
         <div className="carousel-item">
-          <img src={slideImage3} className="d-block w-100 caroussel-img" alt="..."/>
+          <div className='caroussel-test'>
+            <h3 className='text-caroussel'>Select Your Subscriptions</h3>
+          </div>
+          <img src={slideImage3} className="d-block w-100 caroussel-img img-three" alt="..."/>
         </div>
       </div>
-      <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <button style={{zIndex: "1000"}} className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
         <span className="carousel-control-prev-icon" aria-hidden="true"></span>
         <span className="visually-hidden">Previous</span>
       </button>
-      <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <button style={{zIndex: "1000"}} className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
         <span className="carousel-control-next-icon" aria-hidden="true"></span>
         <span className="visually-hidden">Next</span>
       </button>

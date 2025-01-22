@@ -1,31 +1,45 @@
-/* .html,body {
-  overflow: hidden;
-} */
 
 
 .home-home {
-  gap: 3%;
+  /* background-color: red; */
+  height: 89vh;
   display: flex;
-  align-items:center;
-  padding-top: 5%;
 }
 
 
 .home-left {
-  /* background-color: red; */
+  /* background-color: darkgoldenrod; */
   display: flex;
   flex-direction: column;
   font-family: 'Yeseva One', serif;
-  height: 60%;
   width: 50%;
   color: #1a1818;
-  justify-content: space-between;
+  margin-top: 5%;
+}
+
+.photo-home {
+  height: 50%;
+  width: 60%;
+  background-image: url('../assets/photos/moi_01.jpg');
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 8px;
+  /* clip-path: polygon(50% 0%, 0% 100%, 100% 100%); */
+}
+
+.home-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 70%;
+  /* background-color: aquamarine; */
 }
 
 
 .presentation {
-  /* grid-row: 1 / 2;
-  grid-column: 1 / 2; */
   line-height: 0.9;
   font-size: 5.9em;
   margin: 0;
@@ -33,22 +47,6 @@
 
 .presentation p {
   margin: 0;
-}
-
-/* .separation {
-  grid-row: 2 / 3;
-  grid-column: 1 / 2;
-  border-bottom: 1px solid #1a1818;
-  width: 50%;
-  height: 30%;
-} */
-
-.home-right {
-  /* display: flex;
-  flex-direction: column;*/
-  font-family: 'Yeseva One', serif;
-  height: 60%;
-  width: 50%;
 }
 
 .presentation-content {
@@ -62,17 +60,4 @@
 .presentation-content p {
   padding: 2%;
   margin: 0;
-}
-
-.pic {
-  /* background-color: cadetblue; */
-  /* grid-row: 1 / 2; */
-  background-image: url('./photos/moi_01.jpg');
-  /* grid-column: 2 / 3; */
-  /* width: 50%; */
-  height: 100%;
-  width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }

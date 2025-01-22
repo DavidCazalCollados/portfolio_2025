@@ -145,11 +145,24 @@
   position: relative;
 }
 
-.border-caroussel {
-  height: 40%;
-  width: 35%;
+.border-caroussel-left {
+  height: 30%;
+  width: 20%;
   border: solid rgb(40, 40, 40) 1px;
   position: absolute;
+  border-bottom-width: 0;
+  border-right-width: 0;
+}
+
+.border-caroussel-right {
+  height: 30%;
+  width: 20%;
+  border: solid rgb(40, 40, 40) 1px;
+  position: absolute;
+  border-top-width: 0;
+  border-left-width: 0;
+  top: 70%;
+  left: 80%;
 }
 
 .phones-image-function-filmdash {
@@ -173,14 +186,6 @@
   opacity: 100%;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
-
-/* .preferences-video-container,
-.selection-video-container,
-.watchlist-video-container {
-  height: 20px;
-  width: 50%;
-  display: grid;
-} */
 
 .preferences-video-container video,
 .selection-video-container video,
