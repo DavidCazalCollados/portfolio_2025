@@ -10,9 +10,11 @@ function Home() {
   return (
     <motion.div
       className="general-disposition home-home"
-      initial={{ translateY: 700 }}
-      animate={{ translateY: 1 }}
-      exit={{ translateY: 700 }}
+      key="modal"
+      initial={{ x: "5%" }}
+      animate={{ x: "0%" }}
+      exit={{ x: "5%" }}
+      transition={{ duration: 1 }}
     >
       <div className="home-left">
         <div className="presentation">
