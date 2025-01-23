@@ -48,15 +48,43 @@
   margin: 0;
 }
 
-.presentation-content {
+/* .presentation-content {
   display: flex;
   flex-direction: column;
   border: 1px solid #1a1818;
   text-align: justify;
   align-items: center;
+} */
+
+.presentation-content {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+}
+.svg-container {
+  width: 100%;
+  stroke: #414141;
+  /* background-color: rgb(201, 136, 136); */
+  text-align: justify;
+  margin-top: 5%;
 }
 
-.presentation-content p {
+.svg-container p {
   padding: 2%;
   margin: 0;
+  line-height: 1.2;
+  /* background-color: red; */
 }
+
+.border-content {
+  position: absolute;
+  /* background-color: rgb(255, 255, 255); */
+  width: 29.2%;
+  height: 7.47%;
+}
+
+/* .presentation-content p {
+  padding: 2%;
+  margin: 0;
+} */

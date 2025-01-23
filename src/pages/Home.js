@@ -8,31 +8,83 @@ import moi from '../assets/photos/moi_01.jpg'
 function Home() {
 
   return (
-    <motion.div
-      className="general-disposition home-home"
-      key="modal"
-      initial={{ x: "5%" }}
-      animate={{ x: "0%" }}
-      exit={{ x: "5%" }}
-      transition={{ duration: 1 }}
-    >
+    // <motion.div
+    //   className="general-disposition home-home"
+    //   key="modal"
+    //   initial={{ x: "100%", opacity: 0 }}
+    //   animate={{ x: "0%", opacity: 1 }}
+    //   exit={{ x: "100%", opacity: 0 }}
+    //   transition={{
+    //     x: { duration: 1 },
+    //     opacity: { duration: 1 }
+    //   }}
+    // >
+    <div className="general-disposition home-home">
       <div className="home-left">
         <div className="presentation">
-          <p>
-            Hi there, I'm David!
-          </p>
+          <motion.p
+            initial={{ x:"100%", opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            exit={{ x:"100%", opacity: 0 }}
+            transition={{ ease: "easeInOut", duration: 1 }}
+          >
+            Hi there,
+          </motion.p>
+          <motion.p
+            initial={{ x:"-100%", opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            exit={{ x:"-100%", opacity: 0 }}
+            transition={{ ease: "easeInOut", duration: 1, delay: 0.3 }}
+          >
+            I'm
+          </motion.p>
+          <motion.p
+            initial={{ x:"100%", opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            exit={{ x:"100%", opacity: 0 }}
+            transition={{ ease: "easeInOut", duration: 1, delay: 0.6 }}
+          >
+            David!
+          </motion.p>
         </div>
-        <div className="presentation-content">
-          <p>
+        <div className="svg-container">
+          <motion.svg
+            className="border-content"
+            viewBox="0 0 420 55"  // Ajuste ces valeurs en fonction de la taille de ton rectangle
+            preserveAspectRatio="none"
+          >
+            <motion.path
+              initial={{ pathLength: 0, opacity: 0 }}
+              animate={{ pathLength: 1, opacity: 1 }}
+              exit={{ pathLength: 0, opacity: 0 }}
+              transition={{
+                duration: 1.5,
+                ease: "easeInOut",
+                // repeat: Infinity,
+                // repeatType: "loop",
+                // repeatDelay: 1
+              }}
+              strokeWidth={1}
+              strokeDasharray="0 1"
+              fill="none"
+              d="M1,1 H418 V54 H1 Z"
+            />
+          </motion.svg>
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ ease: "easeInOut", duration: 1, delay: 0.9 }}
+          >
             A front-end developer turning creativity into interactive web experiences.
-          </p>
+          </motion.p>
         </div>
       </div>
       <div className='home-right'>
-        {/* <img src={portrait01} alt='' width="100%" height="100%"/> */}
-        {/* <img className='photo-home' src={moi} alt='Picture of David Cazal'/> */}
+
       </div>
-    </motion.div>
+    </div>
+    // {/* </motion.div> */}
   );
 }
 
