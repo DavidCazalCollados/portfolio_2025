@@ -1,11 +1,18 @@
 import React from "react";
 import '../assets/navbar.css'
 import { Link } from 'react-router-dom';
+import { motion } from "motion/react"
 
 class Navbar extends React.Component {
   render() {
     return (
-        <div className="topnav">
+        <motion.div
+          className="topnav"
+          initial={{ opacity: 0}}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ ease: "easeInOut", duration: 1.5 }}
+        >
           <nav className="navbar margin-nav navbar-expand-lg">
             <div className="container-fluid">
               <div className="collapse navbar-collapse centered-nav" id="navbarNavAltMarkup">
@@ -18,7 +25,7 @@ class Navbar extends React.Component {
               </div>
             </div>
           </nav>
-        </div>
+        </motion.div>
     );
   }
 }

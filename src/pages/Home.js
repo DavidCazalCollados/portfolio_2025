@@ -8,17 +8,6 @@ import moi from '../assets/photos/moi_01.jpg'
 function Home() {
 
   return (
-    // <motion.div
-    //   className="general-disposition home-home"
-    //   key="modal"
-    //   initial={{ x: "100%", opacity: 0 }}
-    //   animate={{ x: "0%", opacity: 1 }}
-    //   exit={{ x: "100%", opacity: 0 }}
-    //   transition={{
-    //     x: { duration: 1 },
-    //     opacity: { duration: 1 }
-    //   }}
-    // >
     <div className="general-disposition home-home">
       <div className="home-left">
         <div className="presentation">
@@ -54,15 +43,12 @@ function Home() {
             preserveAspectRatio="none"
           >
             <motion.path
-              initial={{ pathLength: 0, opacity: 0 }}
-              animate={{ pathLength: 1, opacity: 1 }}
-              exit={{ pathLength: 0, opacity: 0 }}
+              initial={{ pathLength: 0 }}
+              animate={{ pathLength: 1 }}
+              exit={{ pathLength: 0 }}
               transition={{
                 duration: 1.5,
                 ease: "easeInOut",
-                // repeat: Infinity,
-                // repeatType: "loop",
-                // repeatDelay: 1
               }}
               strokeWidth={1}
               strokeDasharray="0 1"
@@ -84,7 +70,6 @@ function Home() {
 
       </div>
     </div>
-    // {/* </motion.div> */}
   );
 }
 

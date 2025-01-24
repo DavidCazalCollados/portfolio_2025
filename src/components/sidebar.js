@@ -12,7 +12,13 @@ class Sidebar extends React.Component {
       { label: 'PHONE', url: 'tel:+14388892467' }
     ];
     return (
-      <div className="leftnav">
+      <motion.div
+        className="leftnav"
+        initial={{ opacity: 0}}
+        animate={{ opacity: 1  }}
+        exit={{ opacity: 0 }}
+        transition={{ ease: "easeInOut", duration: 1.5 }}
+      >
         <ul>
           {info.map((item, index) => (
             <li key={`first-list-${index}`}>
@@ -47,7 +53,7 @@ class Sidebar extends React.Component {
             </li>
           ))}
         </ul>
-      </div>
+      </motion.div>
     )
   }
 }
