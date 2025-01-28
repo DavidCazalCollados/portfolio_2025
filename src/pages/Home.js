@@ -40,7 +40,7 @@ function Home() {
           <div className="svg-container">
             <motion.svg
               className="border-content"
-              viewBox="0 0 420 55"  // Ajuste ces valeurs en fonction de la taille de ton rectangle
+              viewBox="0 0 420 55"
               preserveAspectRatio="none"
             >
               <motion.path
@@ -76,7 +76,7 @@ function Home() {
               duration: 1,
               delay: 1 }}
           >
-            <a href='#'>
+            <a href='/about'>
               <button class="button-52">About me</button>
             </a>
           </motion.div>
@@ -84,6 +84,10 @@ function Home() {
         <div className='home-right'>
           <DessinComplet />
         </div>
+      </section>
+
+      <section className='about'>
+
       </section>
     </div>
   );
