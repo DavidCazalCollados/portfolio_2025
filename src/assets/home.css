@@ -1,12 +1,12 @@
 
 .home-home {
   /* height: 89vh; */
-  /* background-color: aqua; */
+  background-color: aqua;
   display: flex;
 }
 
 .home-left {
-  /* background-color: darkgoldenrod; */
+  background-color: darkgoldenrod;
   display: flex;
   flex-direction: column;
   font-family: 'Yeseva One', serif;
@@ -33,7 +33,7 @@
   align-items: center;
   height: 100%;
   width: 70%;
-  /* background-color:burlywood; */
+  background-color:burlywood;
 }
 
 
@@ -76,7 +76,7 @@
 }
 
 .button-about {
-  /* background-color: aqua; */
+  background-color: rgb(63, 75, 75);
   height: 38vh;
   /* width: 41.5%; */
   display: flex;
