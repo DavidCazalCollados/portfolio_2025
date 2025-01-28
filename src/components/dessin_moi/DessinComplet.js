@@ -53,13 +53,6 @@ export default function DessinComplet() {
     <div className='draw-container'>
       {svgData.map((item, index) => (
         <motion.svg
-          // initial={{ y: "150%" }}
-          // animate={{ y: 0 }}
-          // exit={{ y: "150%" }}
-          // transition={{
-          //   duration: 1.5,
-          //   ease: "easeInOut"
-          // }}
           key={index}
           className={item.className}
           width={item.width}
