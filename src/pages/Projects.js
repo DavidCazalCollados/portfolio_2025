@@ -1,8 +1,6 @@
 import React from 'react';
 import "../assets/projects.css"
 import "../assets/general_disposition.css"
-import filmDashImagePhone from '../assets/photos/FILMDASH_SCREEN.png';
-import filmDashVideoPhone from '../assets/videos/SCREEN_REC_FILMDASH.mp4';
 import filmDashImage from '../assets/photos/FILMDASH_SCREEN_LAPTOP.png';
 import filmDashVideo from '../assets/videos/FILMDASH_LAPTOP.mov';
 import HoverVideoPlayer from 'react-hover-video-player';
