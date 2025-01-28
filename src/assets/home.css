@@ -34,7 +34,7 @@
   align-items: center;
   height: 100%;
   width: 70%;
-  /* background-color: aquamarine; */
+  /* background-color:burlywood; */
 }
 
 
@@ -47,14 +47,6 @@
 .presentation p {
   margin: 0;
 }
-
-/* .presentation-content {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid #1a1818;
-  text-align: justify;
-  align-items: center;
-} */
 
 .presentation-content {
   width: 100vw;
@@ -83,8 +75,3 @@
   width: 29.2%;
   height: 7.47%;
 }
-
-/* .presentation-content p {
-  padding: 2%;
-  margin: 0;
-} */

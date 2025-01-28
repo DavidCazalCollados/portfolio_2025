@@ -1,9 +1,8 @@
 import React from 'react';
 import { motion } from "framer-motion";
-import "../assets/home.css"
-import "../assets/general_disposition.css"
-import portrait01 from '../assets/photos/home/portrait_v001.svg'
-import moi from '../assets/photos/moi_01.jpg'
+import DessinComplet from "../components/dessin_moi/DessinComplet";
+import "../assets/home.css";
+import "../assets/general_disposition.css";
 
 function Home() {
 
@@ -67,7 +66,7 @@ function Home() {
         </div>
       </div>
       <div className='home-right'>
-
+        <DessinComplet />
       </div>
     </div>
   );
