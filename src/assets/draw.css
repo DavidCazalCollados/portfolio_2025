@@ -1,0 +1,21 @@
+.boucle-gauche,
+.lunette-deux,
+.boucle-droite {
+  position: absolute;
+  /* background-color: aqua; */
+}
+
+.lunette-deux {
+  top: 20%;
+  left: 58%;
+}
+
+.boucle-gauche {
+  top: 38%;
+  left: 54%;
+}
+
+.boucle-droite {
+  top: 46%;
+  left:82%;
+}
