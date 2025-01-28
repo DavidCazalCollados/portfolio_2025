@@ -66,15 +66,24 @@ function Home() {
               A front-end developer turning creativity into interactive web experiences.
             </motion.p>
           </div>
+          <motion.div
+            className='button-about'
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{
+              ease: "easeInOut",
+              duration: 1,
+              delay: 1 }}
+          >
+            <a href='#'>
+              <button class="button-52">About me</button>
+            </a>
+          </motion.div>
         </div>
         <div className='home-right'>
           <DessinComplet />
         </div>
-      </div>
-      <div className='button-about'>
-        <a href='#'>
-          <button class="button-52">About me</button>
-        </a>
       </div>
     </div>
   );
