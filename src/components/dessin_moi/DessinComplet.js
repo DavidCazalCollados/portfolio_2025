@@ -26,27 +26,6 @@ export default function DessinComplet() {
       height: "42",
       viewBox: "0 0 28 42",
     }
-    // {
-    //   className: "lunette-gauche",
-    //   path: "M1 34.5L93.5 26M93.5 26C112.4 -5.49993 154 0.999956 170 3.99996C186 6.99996 218 23.4999 220 53C222 82.5 190.5 120 148.5 120C106.5 120 79 68 93.5 26Z",
-    //   width: "221",
-    //   height: "121",
-    //   viewBox: "0 0 221 121",
-    // },
-    // {
-    //   className: "jonction",
-    //   path: "M1 2.49999C26 -4.00001 38 7.00002 48 13",
-    //   width: "49",
-    //   height: "14",
-    //   viewBox: "0 0 49 14",
-    // },
-    // {
-    //   className: "lunette-droite",
-    //   path: "M43.4999 111C13.9999 102.5 -10.5 57.4998 7.49995 24.9999C28.5535 -13.0133 121.418 -4 126 33.9999C134.5 104.5 73 119.5 43.4999 111Z",
-    //   width: "128",
-    //   height: "114",
-    //   viewBox: "0 0 128 114",
-    // }
   ]
 
   return (
@@ -77,6 +56,9 @@ export default function DessinComplet() {
 
         </motion.svg>
       ))}
+      <svg>
+
+      </svg>
     </div>
   )
 }
