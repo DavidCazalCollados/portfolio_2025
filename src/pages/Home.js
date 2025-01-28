@@ -9,7 +9,7 @@ function Home() {
 
   return (
     <div className="general-disposition">
-      <div className="home-home">
+      <section className="home-home">
         <div className="home-left">
           <div className="presentation">
             <motion.p
@@ -84,7 +84,7 @@ function Home() {
         <div className='home-right'>
           <DessinComplet />
         </div>
-      </div>
+      </section>
     </div>
   );
 }
