@@ -15,19 +15,19 @@ const Caroussel = () => {
       <div className="carousel-inner">
         <div className="carousel-item active">
           <div className='caroussel-test'>
-            <h3 className='text-caroussel'>Create Your Account</h3>
+            <h3 className='text-caroussel'>1. Create Your Account</h3>
           </div>
           <img src={slideImage1} className="d-block w-100 caroussel-img img-one" alt="..."/>
         </div>
         <div className="carousel-item">
           <div className='caroussel-test'>
-            <h3 className='text-caroussel'>Choose Your Country</h3>
+            <h3 className='text-caroussel'>2. Choose Your Country</h3>
           </div>
           <img src={slideImage2} className="d-block w-100 caroussel-img img-two" alt="..."/>
         </div>
         <div className="carousel-item">
           <div className='caroussel-test'>
-            <h3 className='text-caroussel'>Select Your Subscriptions</h3>
+            <h3 className='text-caroussel'>3. Select Your Subscriptions</h3>
           </div>
           <img src={slideImage3} className="d-block w-100 caroussel-img img-three" alt="..."/>
         </div>
