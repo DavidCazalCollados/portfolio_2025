@@ -16,6 +16,11 @@
   font-family: "Yeseva One", serif;
 }
 
+.gap-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20vh;
+}
 
 /* ABOUT SECTION */
 
@@ -41,6 +46,7 @@
   font-weight: 300;
   font-size: 2.5em;
   text-transform: uppercase;
+  text-align: center;
   margin: 0;
 }
 
@@ -114,7 +120,6 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  /* background-color: blue; */
   justify-content: space-between;
   font-size: 1.5em;
   font-weight: 200;
@@ -133,6 +138,43 @@
   width: 45%;
 }
 
+/* TECH STACK */
+
+.language-used {
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.language-used p {
+  font-weight: 300;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  /* background-color: blue; */
+}
+
+.language-used ul {
+  /* background-color: bisque; */
+  height: 20vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin:0;
+	padding: 0;
+}
+
+.language-used li {
+  margin: 0;
+  padding: 0;
+  /* height: 100%; */
+  width: 10%;
+  /* background-color: blue; */
+  display: inline;
+}
 
 /* FUNCTION SECTION */
 
