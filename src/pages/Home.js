@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from "framer-motion";
 import DessinComplet from "../components/dessin_moi/DessinComplet";
+import { Link } from 'react-router-dom';
 import "../assets/home.css";
 import "../assets/button.css";
 import "../assets/general_disposition.css";
@@ -67,7 +68,7 @@ function Home() {
             </motion.p>
           </div>
           <motion.div
-            className='button-about'
+            className='button-projects'
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -76,18 +77,14 @@ function Home() {
               duration: 1,
               delay: 1 }}
           >
-            <a href='/about'>
-              <button class="button-52">About me</button>
-            </a>
+            <Link to='/projects'>
+              <button className="button-52">Projects</button>
+            </Link>
           </motion.div>
         </div>
         <div className='home-right'>
           <DessinComplet />
         </div>
-      </section>
-
-      <section className='about'>
-
       </section>
     </div>
   );

@@ -53,6 +53,7 @@ export default function DessinComplet() {
         {pathData.map((item, index) => (
           <motion.path
             className={item.className}
+            key={index}
             initial={{ opacity: 0, pathLength: 0 }}
             animate={{ opacity: 1, pathLength: 1 }}
             exit={{ opacity: 0, pathLength: 0 }}
