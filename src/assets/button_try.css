@@ -16,7 +16,7 @@
 
 .button-try-it:after {
   content: "";
-  background-color:rgb(181, 233, 144);
+  background-color:rgb(194, 236, 165);
   width: 100%;
   z-index: -1;
   position: absolute;
