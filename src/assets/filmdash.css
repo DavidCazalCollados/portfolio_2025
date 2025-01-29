@@ -165,8 +165,7 @@
   left: 80%;
 }
 
-.phones-image-function-filmdash {
-  /* background-color: aquamarine; */
+/* .phones-image-function-filmdash {
   display: flex;
   justify-content: center;
   border-radius: 10px;
@@ -178,7 +177,7 @@
 .preferences, .selection, .watchlist {
   height: 100%;
   width: 100%;
-  /* background-color: brown; */
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -192,7 +191,7 @@
 .watchlist-video-container video {
   width: 100%;
   height: 48vh;
-  border-radius: 5px; /* Arrondi de la vidéo */
+  border-radius: 5px;
   object-fit: cover;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
@@ -202,7 +201,7 @@
 .watchlist-video-container:hover video {
   width: 100%;
   height: 48vh;
-  border-radius: 5px; /* Arrondi de la vidéo */
+  border-radius: 5px;
   object-fit: cover;
   filter: brightness(0.7) contrast(1) saturate(0.8);
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -211,7 +210,6 @@
 .text-function-filmdash {
   display: flex;
   margin-top: 3%;
-  /* background-color: brown; */
   width: 100%;
   height: 13vh;
 }
@@ -220,7 +218,6 @@
 .second-function-filmdash,
 .third-function-filmdash {
   text-align: center;
-  /* text-transform: uppercase; */
   font-weight: 300;
   height: 100%;
   border: 0.8px solid black;
@@ -238,11 +235,9 @@
   letter-spacing: 0.1em;
   margin: 0;
   padding: 0;
-  /* background-color: blue; */
 }
 
 .first-function-filmdash {
- /* background-color: blueviolet; */
  margin-right: 10%;
  margin-left: 10.5%;
  width: 19.5%;
@@ -255,4 +250,36 @@
 
 .third-function-filmdash {
   width: 19.65%;
+} */
+
+.function-filmdash {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: red; */
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.preferences-container,
+.selection-container,
+.watchlist-container {
+  background-color: aqua;
+}
+
+.preferences-image,
+.selection-image,
+.watchlist-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
+  filter: brightness(0.7) contrast(1) saturate(0.8);
+}
+
+.preferences-container video,
+.selection-container video,
+.watchlist-container video {
+ width: 100%;
+ height: 50vh;
+ border-radius: 7px;
+ box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }

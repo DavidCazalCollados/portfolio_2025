@@ -1,4 +1,4 @@
-import { react } from 'motion/react-client';
+import { div, img, react } from 'motion/react-client';
 import HoverVideoPlayer from 'react-hover-video-player';
 import '../../assets/banner.css';
 import '../../assets/filmdash.css';
@@ -19,19 +19,22 @@ function FilmDash() {
     {
       sectionName: "preferences",
       sectionImage: preferencesImage,
-      sectionVideo: preferencesVideo
+      sectionVideo: preferencesVideo,
+      description: "Select your preferences"
     },
 
     {
       sectionName: "selection",
       sectionImage: selectionImage,
-      sectionVideo: selectionVideo
+      sectionVideo: selectionVideo,
+      description: "And make your choice!"
     },
 
     {
       sectionName: "watchlist",
       sectionImage: watchlistImage,
-      sectionVideo: watchlistVideo
+      sectionVideo: watchlistVideo,
+      description: "Or save it for later..."
     }
   ];
 
@@ -84,8 +87,27 @@ function FilmDash() {
           <div className='border-caroussel-right'></div>
           <Caroussel />
         </div>
+
         <div className='function-filmdash'>
-          <div className='phones-image-function-filmdash'>
+          {filmdashHover.map((item, index) => (
+            <div key={index} className={`${item.sectionName}-container`}>
+              <HoverVideoPlayer
+                videoSrc={item.sectionVideo}
+                pausedOverlay={
+                  <img
+                    src={item.sectionImage}
+                    alt={`${item.sectionName}`}
+                    className={`${item.sectionName}-image`}
+                  />
+                }
+              />
+              <div key={index} className={`${item.sectionName}-infos`}>
+                <p>{item.description}</p>
+              </div>
+            </div>
+          ))}
+
+          {/* <div className='phones-image-function-filmdash'>
             {filmdashHover.map((item, index) => (
                 <div key={`${index}`}
                   className={`${item.sectionName}-video-container`}
@@ -118,7 +140,7 @@ function FilmDash() {
             <div className='third-function-filmdash'>
               <p>Or save it for later...</p>
             </div>
-          </div>
+          </div> */}
         </div>
 
       </div>
