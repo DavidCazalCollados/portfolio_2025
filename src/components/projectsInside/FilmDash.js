@@ -1,7 +1,9 @@
-import { react } from 'motion/react-client';
+import { div, img, react } from 'motion/react-client';
+import { Link } from 'react-router-dom';
 import HoverVideoPlayer from 'react-hover-video-player';
 import '../../assets/banner.css';
 import '../../assets/filmdash.css';
+import '../../assets/button_try.css'
 import "../../assets/general_disposition.css";
 import Caroussel from '../Caroussel';
 
@@ -19,19 +21,22 @@ function FilmDash() {
     {
       sectionName: "preferences",
       sectionImage: preferencesImage,
-      sectionVideo: preferencesVideo
+      sectionVideo: preferencesVideo,
+      description: "Select your preferences"
     },
 
     {
       sectionName: "selection",
       sectionImage: selectionImage,
-      sectionVideo: selectionVideo
+      sectionVideo: selectionVideo,
+      description: "And make your choice!"
     },
 
     {
       sectionName: "watchlist",
       sectionImage: watchlistImage,
-      sectionVideo: watchlistVideo
+      sectionVideo: watchlistVideo,
+      description: "Or save it for later..."
     }
   ];
 
@@ -84,43 +89,38 @@ function FilmDash() {
           <div className='border-caroussel-right'></div>
           <Caroussel />
         </div>
+
+        {/* <div className='then-title-filmdash'>
+          <p>Then...</p>
+        </div> */}
+        <div className='separation-function'>
+          <div className='line-separation'></div>
+        </div>
         <div className='function-filmdash'>
-          <div className='phones-image-function-filmdash'>
-            {filmdashHover.map((item, index) => (
-                <div key={`${index}`}
-                  className={`${item.sectionName}-video-container`}
-                >
-                  <HoverVideoPlayer
-                  videoSrc={item.sectionVideo}
-                  pausedOverlay={
-                    <img
-                      src={item.sectionImage}
-                      alt={`${item.sectionName}`}
-                      className={`${item.sectionName}`}
-                    />
-                  }
-                  loadingOverlay={
-                    <div className="loading-overlay">
-                      <div className="loading-spinner" />
-                    </div>
-                  }
+          {filmdashHover.map((item, index) => (
+            <div key={index} className={`${item.sectionName}-container`}>
+              <HoverVideoPlayer
+                videoSrc={item.sectionVideo}
+                pausedOverlay={
+                  <img
+                    src={item.sectionImage}
+                    alt={`${item.sectionName}`}
+                    className={`${item.sectionName}-image`}
                   />
-                </div>
-              ))}
-          </div>
-          <div className='text-function-filmdash'>
-            <div className='first-function-filmdash'>
-              <p>First, select your preferences.</p>
+                }
+              />
+              <div key={index} className={`${item.sectionName}-infos`}>
+                <p>{item.description}</p>
+              </div>
             </div>
-            <div className='second-function-filmdash'>
-              <p>Then, make your choice!</p>
-            </div>
-            <div className='third-function-filmdash'>
-              <p>Or save it for later...</p>
-            </div>
-          </div>
+          ))}
         </div>
 
+        <section className='button-filmdash-page'>
+          <Link to='https://www.filmdash.online/'>
+            <button className='button-try-it'>Try it!</button>
+          </Link>
+        </section>
       </div>
     </div>
   )
