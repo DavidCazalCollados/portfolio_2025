@@ -1,20 +1,21 @@
-import { div, img, react } from 'motion/react-client';
+// import { div, img, react } from 'motion/react-client';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import HoverVideoPlayer from 'react-hover-video-player';
+
 import '../../assets/banner.css';
 import '../../assets/filmdash.css';
 import '../../assets/button_try.css'
 import "../../assets/general_disposition.css";
-import Caroussel from '../Caroussel';
 
+import Caroussel from '../Caroussel';
 import preferencesImage from "../../assets/photos/screen_function/preferences_photo.jpg";
 import preferencesVideo from "../../assets/photos/screen_function/preferences_video.mp4";
 import selectionImage from "../../assets/photos/screen_function/selection_photo.jpg";
 import selectionVideo from "../../assets/photos/screen_function/selection_video.mp4";
 import watchlistImage from "../../assets/photos/screen_function/watchlist_photo.jpg";
 import watchlistVideo from "../../assets/photos/screen_function/watchlist_video.mp4";
-
-import React from 'react';
+import { behavior } from '@testing-library/user-event/dist/cjs/event/behavior/registry.js';
 
 function FilmDash() {
   const filmdashHover = [
@@ -42,7 +43,6 @@ function FilmDash() {
 
   return(
     <div className='filmdash'>
-
       <div className='banner-filmdash'>
         <h1>FilmDash</h1>
         <h4>Your cinematic journey!</h4>
@@ -117,7 +117,7 @@ function FilmDash() {
         </div>
 
         <section className='button-filmdash-page'>
-          <Link to='https://www.filmdash.online/'>
+          <Link to='https://www.filmdash.online/' target='_blank' >
             <button className='button-try-it'>Try it!</button>
           </Link>
         </section>
