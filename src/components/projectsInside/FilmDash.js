@@ -1,7 +1,9 @@
 import { div, img, react } from 'motion/react-client';
+import { Link } from 'react-router-dom';
 import HoverVideoPlayer from 'react-hover-video-player';
 import '../../assets/banner.css';
 import '../../assets/filmdash.css';
+import '../../assets/button_try.css'
 import "../../assets/general_disposition.css";
 import Caroussel from '../Caroussel';
 
@@ -88,6 +90,12 @@ function FilmDash() {
           <Caroussel />
         </div>
 
+        {/* <div className='then-title-filmdash'>
+          <p>Then...</p>
+        </div> */}
+        <div className='separation-function'>
+          <div className='line-separation'></div>
+        </div>
         <div className='function-filmdash'>
           {filmdashHover.map((item, index) => (
             <div key={index} className={`${item.sectionName}-container`}>
@@ -106,43 +114,13 @@ function FilmDash() {
               </div>
             </div>
           ))}
-
-          {/* <div className='phones-image-function-filmdash'>
-            {filmdashHover.map((item, index) => (
-                <div key={`${index}`}
-                  className={`${item.sectionName}-video-container`}
-                >
-                  <HoverVideoPlayer
-                  videoSrc={item.sectionVideo}
-                  pausedOverlay={
-                    <img
-                      src={item.sectionImage}
-                      alt={`${item.sectionName}`}
-                      className={`${item.sectionName}`}
-                    />
-                  }
-                  loadingOverlay={
-                    <div className="loading-overlay">
-                      <div className="loading-spinner" />
-                    </div>
-                  }
-                  />
-                </div>
-              ))}
-          </div>
-          <div className='text-function-filmdash'>
-            <div className='first-function-filmdash'>
-              <p>First, select your preferences.</p>
-            </div>
-            <div className='second-function-filmdash'>
-              <p>Then, make your choice!</p>
-            </div>
-            <div className='third-function-filmdash'>
-              <p>Or save it for later...</p>
-            </div>
-          </div> */}
         </div>
 
+        <section className='button-filmdash-page'>
+          <Link to='https://www.filmdash.online/'>
+            <button className='button-try-it'>Try it!</button>
+          </Link>
+        </section>
       </div>
     </div>
   )
