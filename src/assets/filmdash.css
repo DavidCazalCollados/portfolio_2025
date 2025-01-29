@@ -1,8 +1,8 @@
-.filmdash {
-  /* background-color: rgb(217, 255, 255); */
-  /* font-family: 'Fira Sans', sans-serif; */
+.filmdash-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15vh ;
 }
-
 
 /* Banner */
 
@@ -19,25 +19,37 @@
 
 /* ABOUT SECTION */
 
-.about {
-  margin-top: 10%;
-  color: var(--font-color);
+.about-section {
+  /* background-color: aquamarine; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 140vh;
+}
+
+.intro-section {
+  /* background-color: blue; */
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 /* Title About*/
 
-.about p{
+.about-title p{
   font-weight: 300;
   font-size: 2.5em;
   text-transform: uppercase;
+  margin: 0;
 }
 
 /* Content ABOUT SECTION */
 
 .intro-filmdash {
+  /* background-color: bisque; */
   display: flex;
   gap: 3%;
-  margin-top: 7%;
   height: 55vh;
 }
 
@@ -79,9 +91,9 @@
 /* DEVELOPMENT SECTION */
 
 .development-filmdash {
+  /* background-color: cadetblue; */
   display: flex;
   gap: 5%;
-  margin-top: 10%;
   height: 45vh;
 
 }

@@ -42,44 +42,47 @@ function FilmDash() {
   ];
 
   return(
-    <div className='filmdash'>
-      <div className='banner-filmdash'>
+    <div className='filmdash-container'>
+      <section className='banner-filmdash'>
         <h1>FilmDash</h1>
         <h4>Your cinematic journey!</h4>
-      </div>
+      </section>
 
       <div className='general-disposition'>
 
-        <div className='about'>
-          <p>About</p>
-        </div>
-
-        <div className='intro-filmdash'>
-          <div className='presentation-picture-filmdash'>
-          </div>
-          <div className='text-presentation-filmdash'>
-            <div className='begin-presentation-filmdash'>
-              <p>
-                FilmDash is a web application designed for mobile-first experiences,
-                aiming to help working professionals and students (ages 20-50) find tailored
-                entertainment quickly and easily.
-              </p>
+        <section className='about-section'>
+            <div className='about-title'>
+              <p>About</p>
             </div>
-          </div>
-        </div>
+            <div className='intro-section'>
+              <div className='intro-filmdash'>
+                <div className='presentation-picture-filmdash'>
+                </div>
+                <div className='text-presentation-filmdash'>
+                  <div className='begin-presentation-filmdash'>
+                    <p>
+                      FilmDash is a web application designed for mobile-first experiences,
+                      aiming to help working professionals and students (ages 20-50) find tailored
+                      entertainment quickly and easily.
+                    </p>
+                  </div>
+                </div>
+              </div>
 
-        <div className='development-filmdash'>
-          <div className='development-text-filmdash'>
-            <p>
-              The project was developed as a final
-              project during a 2-month coding bootcamp at Le Wagon, where it was chosen
-              from a pool of ideas and built by a team of 3 developers over a 2-week agile sprint.
-            </p>
-            <div className='border-development-filmdash'></div>
-          </div>
-          <div className='development-picture-filmdash'>
-          </div>
-        </div>
+              <div className='development-filmdash'>
+                <div className='development-text-filmdash'>
+                  <p>
+                    The project was developed as a final
+                    project during a 2-month coding bootcamp at Le Wagon, where it was chosen
+                    from a pool of ideas and built by a team of 3 developers over a 2-week agile sprint.
+                  </p>
+                  <div className='border-development-filmdash'></div>
+                </div>
+                <div className='development-picture-filmdash'>
+                </div>
+              </div>
+            </div>
+        </section>
 
         <div className='function-title-filmdash'>
           <p>How do you use it?</p>
