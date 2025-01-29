@@ -1,8 +1,8 @@
-.filmdash {
-  /* background-color: rgb(217, 255, 255); */
-  /* font-family: 'Fira Sans', sans-serif; */
+.filmdash-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15vh ;
 }
-
 
 /* Banner */
 
@@ -16,20 +16,38 @@
   font-family: "Yeseva One", serif;
 }
 
+.gap-section {
+  display: flex;
+  flex-direction: column;
+  gap: 23vh;
+}
 
 /* ABOUT SECTION */
 
-.about {
-  margin-top: 10%;
-  color: var(--font-color);
+.about-section {
+  /* background-color: aquamarine; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 140vh;
+}
+
+.intro-section {
+  /* background-color: blue; */
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 /* Title About*/
 
-.about p{
+.about-title p{
   font-weight: 300;
   font-size: 2.5em;
   text-transform: uppercase;
+  text-align: center;
+  margin: 0;
 }
 
 /* Content ABOUT SECTION */
@@ -37,7 +55,6 @@
 .intro-filmdash {
   display: flex;
   gap: 3%;
-  margin-top: 7%;
   height: 55vh;
 }
 
@@ -79,9 +96,9 @@
 /* DEVELOPMENT SECTION */
 
 .development-filmdash {
+  /* background-color: cadetblue; */
   display: flex;
   gap: 5%;
-  margin-top: 10%;
   height: 45vh;
 
 }
@@ -102,7 +119,6 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  /* background-color: blue; */
   justify-content: space-between;
   font-size: 1.5em;
   font-weight: 200;
@@ -121,13 +137,60 @@
   width: 45%;
 }
 
+/* TECH STACK */
+
+.language-used {
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.language-used p {
+  font-weight: 300;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+}
+
+.language-used ul {
+  height: 20vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin:0;
+	padding: 0;
+}
+
+.language-used li {
+  margin: 0;
+  padding: 0;
+  width: 10%;
+  display: inline;
+}
 
 /* FUNCTION SECTION */
 
+.using {
+  height: 180vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .function-title-filmdash {
-  margin-top: 20%;
   color: var(--font-color);
   text-align: center;
+  margin-bottom: 5%;
+}
+
+.every-function-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
 }
 
 /* Title Function*/
@@ -136,13 +199,14 @@
   font-weight: 300;
   font-size: 2.5em;
   text-transform: uppercase;
+  margin: 0;
 }
 
 /* Caroussel settings */
 
 .caroussel-container-filmdash {
-  margin-top: 8%;
   position: relative;
+
 }
 
 .border-caroussel-left {
@@ -166,10 +230,9 @@
 }
 
 .separation-function {
-  margin-top: 12%;
   display: flex;
   justify-content: center;
-  /* background-color: red; */
+
 }
 
 .line-separation {
@@ -180,10 +243,8 @@
 .function-filmdash {
   display: flex;
   justify-content: space-between;
-  /* background-color: red; */
   margin-left: 2%;
   margin-right: 2%;
-  margin-top: 12%;
 }
 
 .preferences-container,
@@ -238,9 +299,8 @@
 }
 
 .button-filmdash-page {
-  /* background-color: aqua; */
-  height: 40vh;
+  /* height: 40vh; */
+  margin-bottom: 23vh;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
 }
