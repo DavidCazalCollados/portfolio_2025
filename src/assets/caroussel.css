@@ -6,14 +6,17 @@
 
 .img-one {
   filter: brightness(75%);
+  object-fit: cover;
 }
 
 .img-two {
   filter: brightness(55%);
+  object-fit: cover;
 }
 
 .img-three {
   filter: brightness(60%);
+  object-fit: cover;
 }
 
 .caroussel-test {
@@ -31,5 +34,5 @@
 
 .caroussel-test h3 {
   font-size: 2.5em;
-
+  text-align: center;
 }

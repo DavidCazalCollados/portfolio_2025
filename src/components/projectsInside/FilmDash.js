@@ -138,37 +138,41 @@ function FilmDash() {
           </ul>
         </section>
 
-        <div className='function-title-filmdash'>
-          <p>How do you use it?</p>
-        </div>
-        <div className='caroussel-container-filmdash'>
-          <div className='border-caroussel-left'></div>
-          <div className='border-caroussel-right'></div>
-          <Caroussel />
-        </div>
-
-        <div className='separation-function'>
-          <div className='line-separation'></div>
-        </div>
-        <div className='function-filmdash'>
-          {filmdashHover.map((item, index) => (
-            <div key={index} className={`${item.sectionName}-container`}>
-              <HoverVideoPlayer
-                videoSrc={item.sectionVideo}
-                pausedOverlay={
-                  <img
-                    src={item.sectionImage}
-                    alt={`${item.sectionName}`}
-                    className={`${item.sectionName}-image`}
-                  />
-                }
-              />
-              <div key={index} className={`${item.sectionName}-infos`}>
-                <p>{item.description}</p>
-              </div>
+        <section className='using'>
+          <div className='function-title-filmdash'>
+            <p>How do you use it?</p>
+          </div>
+          <div className='every-function-container'>
+            <div className='caroussel-container-filmdash'>
+              <div className='border-caroussel-left'></div>
+              <div className='border-caroussel-right'></div>
+              <Caroussel />
             </div>
-          ))}
-        </div>
+
+            <div className='separation-function'>
+              <div className='line-separation'></div>
+            </div>
+            <div className='function-filmdash'>
+              {filmdashHover.map((item, index) => (
+                <div key={index} className={`${item.sectionName}-container`}>
+                  <HoverVideoPlayer
+                    videoSrc={item.sectionVideo}
+                    pausedOverlay={
+                      <img
+                        src={item.sectionImage}
+                        alt={`${item.sectionName}`}
+                        className={`${item.sectionName}-image`}
+                      />
+                    }
+                  />
+                  <div key={index} className={`${item.sectionName}-infos`}>
+                    <p>{item.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
 
         <section className='button-filmdash-page'>
           <Link to='https://www.filmdash.online/' target='_blank' >
