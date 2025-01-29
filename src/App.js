@@ -7,26 +7,26 @@ import Sidebar from './components/sidebar';
 import AnimatedRoutes from './components/AnimatedRoutes';
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true);
+  // const [isLoading, setIsLoading] = useState(true);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 2000);
-    return () => clearTimeout(timer);
-  }, []);
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     setIsLoading(false);
+  //   }, 2000);
+  //   return () => clearTimeout(timer);
+  // }, []);
 
   return (
     <Router>
-      {isLoading ? (
+      {/* {isLoading ? (
         <h1>Loading</h1>
-      ) : (
+      ) : ( */}
         <div>
           <Navbar />
           <AnimatedRoutes />
           <Sidebar />
         </div>
-      )}
+      {/* )} */}
     </Router>
   );
 }
