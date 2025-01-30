@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10vh;
+    /* gap: 10vh; */
 }
 
 /* Title projects */
@@ -14,6 +14,7 @@
   width: 100%;
   padding-top: 5%;
   color: var(--font-color);
+  margin-bottom: 10vh;
 }
 
 .project-entete h2 {
@@ -87,4 +88,27 @@
 .filmdash-project a:hover {
   opacity: 1;
   transform: translateY(0%);
+}
+
+.line-top {
+  /* background-color: red; */
+}
+
+.line-bottom {
+
+}
+
+.line-right {
+  /* background-color: rebeccapurple; */
+  position: absolute;
+  top: 0;
+  left: 72.7%;
+  z-index: 10;
+}
+
+.line-left {
+  /* background-color: rebeccapurple; */
+  position: absolute;
+  left: 27.2%;
+  top: 0;
 }
