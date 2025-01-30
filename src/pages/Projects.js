@@ -25,9 +25,9 @@ function Projects() {
       </div>
       <div className='project-container'>
         <div className='filmdash-project'>
-          <div className='filmdash-photo'>
+          {/* <div className='filmdash-photo'> */}
             <Link to='/projects/filmdash'><h3>Filmdash</h3></Link>
-          </div>
+          {/* </div> */}
         </div>
       </div>
     </div>
