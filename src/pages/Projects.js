@@ -1,11 +1,9 @@
 import React from 'react';
 import { Link } from "react-router";
-
-import filmDashImage from '../assets/photos/FILMDASH_SCREEN_LAPTOP.png';
 import coverFilmdash from "../assets/photos/cover_filmdash.jpg";
-import filmDashVideo from '../assets/videos/FILMDASH_LAPTOP.mov';
-import HoverVideoPlayer from 'react-hover-video-player';
 import { motion } from "motion/react"
+
+import DessinTv from "../components/DessinTv";
 
 import "../assets/projects.css"
 import "../assets/general_disposition.css"
@@ -84,11 +82,13 @@ function Projects() {
           delay: 1.2
         }}
         >
-        <div className='filmdash-project'>
-          {/* <div className='filmdash-photo'> */}
-            <Link to='/projects/filmdash'><h3>Filmdash</h3></Link>
-          {/* </div> */}
-        </div>
+          <div className='filmdash-container'>
+            <DessinTv />
+          </div>
+        {/* <div className='filmdash-project'>
+          <Link to='/projects/filmdash'><h3>Filmdash</h3></Link>
+        </div> */}
+
       </motion.div>
       <svg className='line-bottom' width="100%" height="1" xmlns="http://www.w3.org/2000/svg">
         <motion.path
