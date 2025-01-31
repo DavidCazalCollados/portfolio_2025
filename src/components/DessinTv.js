@@ -31,8 +31,8 @@ export default function DessinTv() {
         <circle cx="1009.5" cy="3.5" r="2.5" stroke="black" stroke-width="2"/>
         <circle cx="655.5" cy="48.5" r="2.5" stroke="black" stroke-width="2"/>
         <path d="M603.954 704L584.704 682H1142.07L1126.48 704H603.954Z" stroke="black" stroke-width="2"/>
-        <path d="M0 927.5H610.5L639 704" stroke="black" stroke-width="2"/>
-        <path d="M1728 927H1118L1079.5 704.5" stroke="black" stroke-width="2"/>
+        <path d="M610 927.5H610.5L639 704" stroke="black" stroke-width="2"/>
+        <path d="M1119 927H1118L1079.5 704.5" stroke="black" stroke-width="2"/>
       </svg>
 
     </div>

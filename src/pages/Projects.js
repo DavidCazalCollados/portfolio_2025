@@ -82,7 +82,26 @@ function Projects() {
           delay: 1.2
         }}
         >
-          <div className='filmdash-container'>
+          <div className='filmdash-project'>
+            <svg
+              width="100%"
+              height="100%"
+              xmlns="http://www.w3.org/2000/svg"
+              className="filmdash-container"
+            >
+              <rect
+                className="border-rect"
+                // x="0"
+                // y="0"
+                width="100%"
+                height="100%"
+                // rx="4px"
+                // ry="4px"
+                fill="transparent"
+                stroke="black"
+                strokeWidth="1.5"
+              />
+            </svg>
             <DessinTv />
           </div>
         {/* <div className='filmdash-project'>
@@ -90,20 +109,20 @@ function Projects() {
         </div> */}
 
       </motion.div>
-      <svg className='line-bottom' width="100%" height="1" xmlns="http://www.w3.org/2000/svg">
+      {/* <svg className='line-bottom' width="100%" height="1" xmlns="http://www.w3.org/2000/svg">
         <motion.path
           d="M800,0 L1000,0"
           stroke="black"
           strokeWidth="2"
           initial={{ translateX: "50%" }}
-          animate={{ translateX: "-100%" }}
+          animate={{ translateX: "-101%" }}
           transition={{
             duration: 1.5,
             ease: "easeInOut",
             // delay: 0.8
           }}
         />
-      </svg>
+      </svg> */}
     </div>
   )
 }
