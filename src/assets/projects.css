@@ -37,8 +37,8 @@
 }
 
 .filmdash-container {
-  width: 100%;
-  /* background-color: aliceblue; */
+  /* width: 100%; */
+  background-color: aliceblue;
 }
 
 .filmdash-project {
@@ -112,4 +112,9 @@
   position: absolute;
   left: 27.2%;
   top: 0;
+}
+
+.border-rect {
+  padding: 0;
+  margin: 0;
 }
