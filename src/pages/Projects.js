@@ -42,12 +42,16 @@ function Projects() {
               viewBox="0 0 100 100"
               preserveAspectRatio="none"
             >
-              <path
+              <motion.path
                 className='border-rect'
-                d="M 0 0 H 100 V 100 H 0 Z" // Path data for a rectangle
+                d="M 0.1 0.1 H 99.9 V 99.9 H 0.1 z"
                 fill="transparent"
-                strokeWidth="1"
+                strokeWidth={0.1}
                 stroke="var(--font-color)"
+                // vectorEffect="non-scaling-stroke"
+                initial={{ pathLength: 0 }}
+                animate={{ pathLength: 1 }}
+                transition={{ duration: 1.3, ease: "easeInOut" }}
               />
             </svg>
             <DessinTv />

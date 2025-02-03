@@ -38,6 +38,7 @@
 
 .filmdash-container {
   /* width: 100%; */
+  /* background-color: red; */
 }
 
 .filmdash-project {
@@ -114,6 +115,6 @@
 }
 
 .border-rect {
-  padding: 0;
-  margin: 0;
+  /* stroke-dasharray: 500;
+  stroke-dashoffset: 1000; */
 }
