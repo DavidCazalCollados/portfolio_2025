@@ -49,7 +49,6 @@ export default function DessinTv() {
             d={path.d}
             stroke={commonProps.stroke}
             strokeWidth={commonProps.strokeWidth}
-            {...(path.strokeLinecap ? { strokeLinecap: path.strokeLinecap } : {})}
             initial={{ pathLength: 0 }}
             animate={{ pathLength: 1 }}
             transition={{

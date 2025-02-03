@@ -29,15 +29,9 @@ function Projects() {
       >
         <h2>Projects</h2>
       </motion.div>
-      <motion.div
+
+      <div
         className='project-container'
-        // initial={{ opacity: 0 }}
-        // animate={{ opacity: 1 }}
-        // transition={{
-        //   duration: 1,
-        //   ease: "easeInOut",
-        //   delay: 1.2
-        // }}
         >
           <div className='filmdash-project'>
             <svg
@@ -45,23 +39,24 @@ function Projects() {
               height="100%"
               xmlns="http://www.w3.org/2000/svg"
               className="filmdash-container"
+              viewBox="0 0 100 100"
+              preserveAspectRatio="none"
             >
-              <rect
-                className="border-rect"
-                // x="0"
-                // y="0"
-                width="100%"
-                height="100%"
-                // rx="4px"
-                // ry="4px"
+              <motion.path
+                className='border-rect'
+                d="M 0.1 0.1 H 99.9 V 99.9 H 0.1 z"
                 fill="transparent"
-                stroke="black"
-                strokeWidth="1.5"
+                strokeWidth={0.1}
+                stroke="var(--font-color)"
+                // vectorEffect="non-scaling-stroke"
+                initial={{ pathLength: 0 }}
+                animate={{ pathLength: 1 }}
+                transition={{ duration: 1.3, ease: "easeInOut" }}
               />
             </svg>
             <DessinTv />
           </div>
-      </motion.div>
+      </div>
     </div>
   )
 }
