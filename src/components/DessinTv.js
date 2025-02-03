@@ -1,38 +1,63 @@
 import React from 'react'
+import { motion } from "motion/react"
 import "../assets/tv_container.css"
 
 export default function DessinTv() {
+
+  const commonProps = {
+    stroke: "var(--font-color)",
+    strokeWidth: 2,
+  };
+
+  const tvPaths = [
+    { d: "M78.5 927.5L107 704" },
+    { d: "M530.6 454H585.242", strokeLinecap: "round" },
+    { d: "M569 927L530.5 704.5" },
+    { d: "M530.6 399.461H585.242", strokeLinecap: "round" },
+    { d: "M530.6 474H585.242", strokeLinecap: "round" },
+    { d: "M530.6 434H585.242", strokeLinecap: "round" },
+    { d: "M530.6 416H585.242", strokeLinecap: "round" },
+    { d: "M530.6 325H585.242", strokeLinecap: "round" },
+    { d: "M530.6 341H585.242", strokeLinecap: "round" },
+    { d: "M530.6 356H585.242", strokeLinecap: "round" },
+    { d: "M530.6 370H585.242", strokeLinecap: "round" },
+    { d: "M530.6 384H585.242", strokeLinecap: "round" },
+    { d: "M29.0001 240C16.5001 240 2.02611 253.5 2.00005 267.5C1.97399 281.5 2.00005 623.5 2.00005 651C2.00005 678.5 26.5 681 35.5 681H596.5C613.5 681 627 665 627 653V268.5C627 248 608.5 240 598 240H29.0001Z" },
+    { d: "M74.9923 272C46.4918 272 24 297.132 24 319.247V602.732C24 626.552 51.9918 654 77.9923 654H437.999C459.999 654 493 628.868 493 599.716V327.289C493 300.65 471.5 272 437.999 272H74.9923Z" },
+    { d: "M521.438 272C517 272 511 278 511 285V641.5C511 647.5 516.73 654 522.052 654H595.742C600.245 654 607 647 607 640V285C607 280 602.599 272 595.742 272H521.438Z" },
+    { d: "M364 211H245V239H364V211Z" },
+    { d: "M264.5 210.5L108.5 50.5" },
+    { d: "M338.884 210.48L459.5 5.5" },
+    { d: "M108.5 47C109.466 47.9665 109.466 49.5335 108.5 50.5C107.533 51.4665 105.966 51.4665 105 50.5C104.033 49.5335 104.033 47.9665 105 47C105.966 46.0335 107.533 46.0335 108.5 47Z" },
+    { d: "M462.225 1.72487C463.191 2.69137 463.191 4.25838 462.225 5.22487C461.258 6.19137 459.691 6.19137 458.725 5.22487C457.758 4.25838 457.758 2.69137 458.725 1.72487C459.691 0.758375 461.258 0.758375 462.225 1.72487Z" },
+    { d: "M596 555C596.555 534.566 580.435 517.552 560 517C539.021 516.433 521.43 534.021 522 555C522.551 575.293 539.201 591.274 559.5 591C579.519 590.73 595.456 575.013 596 555Z" },
+    { d: "M587.989 554.787C588.424 538.775 575.794 525.443 559.783 525.01C543.346 524.566 529.564 538.348 530.011 554.787C530.443 570.689 543.488 583.212 559.392 582.997C575.076 582.785 587.563 570.47 587.989 554.787Z" },
+    { d: "M554.993 615.516C555.278 605.025 547.003 596.29 536.513 596.007C525.744 595.716 516.714 604.745 517.007 615.516C517.29 625.934 525.837 634.139 536.257 633.998C546.533 633.859 554.714 625.791 554.993 615.516Z" },
+    { d: "M548.995 614.867C549.197 607.412 543.318 601.206 535.865 601.005C528.213 600.798 521.797 607.214 522.005 614.867C522.206 622.269 528.279 628.099 535.682 627.999C542.984 627.9 548.797 622.167 548.995 614.867Z" },
+    { d: "M599.993 615.516C600.278 605.025 592.003 596.29 581.513 596.007C570.744 595.716 561.714 604.745 562.007 615.516C562.29 625.934 570.837 634.139 581.257 633.998C591.533 633.859 599.714 625.791 599.993 615.516Z" },
+    { d: "M593.995 614.867C594.197 607.412 588.318 601.206 580.865 601.005C573.213 600.798 566.797 607.214 567.005 614.867C567.206 622.269 573.279 628.099 580.682 627.999C587.984 627.9 593.797 622.167 593.995 614.867Z" },
+    { d: "M576 531L569 527L542 577L549 581L576 531Z" },
+    { d: "M594 681L35.5 681.5L54.903 704H577.5L594 681Z" },
+  ];
+
   return (
     <div className='tv-container'>
-      <svg width="100%" height="100%" viewBox="0 0 1728 929" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="551" y="240" width="625" height="441" rx="31" stroke="black" stroke-width="2"/>
-        <rect x="572" y="272" width="469" height="381" rx="58" stroke="black" stroke-width="2"/>
-        <rect x="1061" y="272" width="94" height="381" rx="12" stroke="black" stroke-width="2"/>
-        <circle cx="1108" cy="554" r="37" stroke="black" stroke-width="2"/>
-        <circle cx="1108" cy="554" r="29" stroke="black" stroke-width="2"/>
-        <rect x="1117.78" y="527.245" width="7.62208" height="56.7978" transform="rotate(28.1344 1117.78 527.245)" stroke="black" stroke-width="2"/>
-        <path d="M1079.6 399.461H1134.24" stroke="black" stroke-width="2" stroke-linecap="round"/>
-        <path d="M1079.6 474H1134.24" stroke="black" stroke-width="2" stroke-linecap="round"/>
-        <path d="M1079.6 454H1134.24" stroke="black" stroke-width="2" stroke-linecap="round"/>
-        <path d="M1079.6 434H1134.24" stroke="black" stroke-width="2" stroke-linecap="round"/>
-        <path d="M1079.6 416H1134.24" stroke="black" stroke-width="2" stroke-linecap="round"/>
-        <path d="M1079.6 325H1134.24" stroke="black" stroke-width="2" stroke-linecap="round"/>
-        <path d="M1079.6 341H1134.24" stroke="black" stroke-width="2" stroke-linecap="round"/>
-        <path d="M1079.6 356H1134.24" stroke="black" stroke-width="2" stroke-linecap="round"/>
-        <path d="M1079.6 370H1134.24" stroke="black" stroke-width="2" stroke-linecap="round"/>
-        <path d="M1079.6 384H1134.24" stroke="black" stroke-width="2" stroke-linecap="round"/>
-        <circle cx="1085" cy="615" r="19" stroke="black" stroke-width="2"/>
-        <circle cx="1130" cy="615" r="19" stroke="black" stroke-width="2"/>
-        <circle cx="1129.5" cy="614.5" r="13.5" stroke="black" stroke-width="2"/>
-        <circle cx="1084.5" cy="614.5" r="13.5" stroke="black" stroke-width="2"/>
-        <rect x="794" y="211" width="119" height="27" stroke="black" stroke-width="2"/>
-        <path d="M813.5 210.5L657.5 50.5" stroke="black" stroke-width="2"/>
-        <path d="M887.884 210.48L1008.5 5.5" stroke="black" stroke-width="2"/>
-        <circle cx="1009.5" cy="3.5" r="2.5" stroke="black" stroke-width="2"/>
-        <circle cx="655.5" cy="48.5" r="2.5" stroke="black" stroke-width="2"/>
-        <path d="M603.954 704L584.704 682H1142.07L1126.48 704H603.954Z" stroke="black" stroke-width="2"/>
-        <path d="M610 927.5H610.5L639 704" stroke="black" stroke-width="2"/>
-        <path d="M1119 927H1118L1079.5 704.5" stroke="black" stroke-width="2"/>
+      <svg width="100%" height="100%" viewBox="0 0 628 928" fill="none" xmlns="http://www.w3.org/2000/svg">
+        {tvPaths.map((path, index) => (
+          <motion.path
+            key={index}
+            d={path.d}
+            stroke={commonProps.stroke}
+            strokeWidth={commonProps.strokeWidth}
+            {...(path.strokeLinecap ? { strokeLinecap: path.strokeLinecap } : {})}
+            initial={{ pathLength: 0 }}
+            animate={{ pathLength: 1 }}
+            transition={{
+              duration: 1.5,
+              ease: "easeInOut",
+             }}
+          />
+        ))}
       </svg>
 
     </div>
