@@ -14,8 +14,12 @@
 
 .background-filmdash-button:after {
   content: "";
+  font-family: "Limelight", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 99.3%;
-  background-color:#a0c0cf;
+  background-color:#bad2ddd3;
   z-index: -1;
   position: absolute;
   height: 98.8%;
