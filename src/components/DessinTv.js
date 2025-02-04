@@ -54,6 +54,7 @@ export default function DessinTv() {
             transition={{
               duration: 1.5,
               ease: "easeInOut",
+              delay: index * 0.02
              }}
           />
         ))}

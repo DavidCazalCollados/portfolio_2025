@@ -12,9 +12,9 @@
   text-align: center;
   /* background-color: aqua; */
   width: 100%;
-  padding-top: 3%;
+  padding-top: 2%;
   color: var(--font-color);
-  margin-bottom: 8vh;
+  margin-bottom: 7vh;
 }
 
 .project-entete h2 {
@@ -47,7 +47,7 @@
   justify-content: center;
   align-items: center;
   width: 75%;
-  height: 55vh;
+  /* height: 55vh; */
 }
 
 

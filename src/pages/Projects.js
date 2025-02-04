@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from "react-router";
 import coverFilmdash from "../assets/photos/cover_filmdash.jpg";
-import { motion } from "motion/react"
+import { motion } from "motion/react";
 
 import DessinTv from "../components/DessinTv";
+import BorderProjects from "../components/BorderProjects";
 
 import "../assets/projects.css"
 import "../assets/general_disposition.css"
@@ -23,7 +24,7 @@ function Projects() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{
-          duration: 1,
+          duration: 1.3,
           ease: "easeInOut"
         }}
       >
@@ -34,26 +35,7 @@ function Projects() {
         className='project-container'
         >
           <div className='filmdash-project'>
-            <svg
-              width="100%"
-              height="100%"
-              xmlns="http://www.w3.org/2000/svg"
-              className="filmdash-container"
-              viewBox="0 0 100 100"
-              preserveAspectRatio="none"
-            >
-              <motion.path
-                className='border-rect'
-                d="M 0.1 0.1 H 99.9 V 99.9 H 0.1 z"
-                fill="transparent"
-                strokeWidth={0.1}
-                stroke="var(--font-color)"
-                // vectorEffect="non-scaling-stroke"
-                initial={{ pathLength: 0 }}
-                animate={{ pathLength: 1 }}
-                transition={{ duration: 1.3, ease: "easeInOut" }}
-              />
-            </svg>
+            <BorderProjects />
             <DessinTv />
           </div>
       </div>
