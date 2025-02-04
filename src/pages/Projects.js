@@ -1,12 +1,14 @@
 import React from 'react';
 import { Link } from "react-router";
 import coverFilmdash from "../assets/photos/cover_filmdash.jpg";
-import { motion } from "motion/react"
+import { motion } from "motion/react";
 
 import DessinTv from "../components/DessinTv";
+import BorderProjects from "../components/BorderProjects";
 
 import "../assets/projects.css"
 import "../assets/general_disposition.css"
+import "../assets/background_filmdash_button.css"
 
 function Projects() {
   const projectHover = [
@@ -20,11 +22,17 @@ function Projects() {
     <div className="general-disposition project-disposition">
       <motion.div
         className='project-entete'
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{
-          duration: 1,
-          ease: "easeInOut"
+          opacity:{
+            duration: 2,
+            ease: "easeInOut"
+          },
+          y:{
+            duration: 0.8,
+            ease: "easeInOut"
+          }
         }}
       >
         <h2>Projects</h2>
@@ -33,29 +41,13 @@ function Projects() {
       <div
         className='project-container'
         >
-          <div className='filmdash-project'>
-            <svg
-              width="100%"
-              height="100%"
-              xmlns="http://www.w3.org/2000/svg"
-              className="filmdash-container"
-              viewBox="0 0 100 100"
-              preserveAspectRatio="none"
-            >
-              <motion.path
-                className='border-rect'
-                d="M 0.1 0.1 H 99.9 V 99.9 H 0.1 z"
-                fill="transparent"
-                strokeWidth={0.1}
-                stroke="var(--font-color)"
-                // vectorEffect="non-scaling-stroke"
-                initial={{ pathLength: 0 }}
-                animate={{ pathLength: 1 }}
-                transition={{ duration: 1.3, ease: "easeInOut" }}
-              />
-            </svg>
-            <DessinTv />
-          </div>
+          {/* <div className='filmdash-project'> */}
+            <Link to="/projects/filmdash" className='filmdash-project background-filmdash-button'>
+              <h4>Filmdash</h4>
+              <BorderProjects />
+              <DessinTv />
+            </Link>
+          {/* </div> */}
       </div>
     </div>
   )

@@ -1,7 +1,9 @@
 .tv-container {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 75%;
   height: 75%;
   margin: 0;
-  /* background-color: aqua; */
 }

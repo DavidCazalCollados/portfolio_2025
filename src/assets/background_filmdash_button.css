@@ -1,0 +1,32 @@
+.background-filmdash-button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  width: 75%;
+  outline: 0;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.background-filmdash-button:after {
+  content: "";
+  width: 99.3%;
+  background-color:#a0c0cf;
+  z-index: -1;
+  position: absolute;
+  height: 98.8%;
+  top: 4%;
+  left: 3%;
+  transition: 0.2s;
+  border-radius: 7px;
+}
+
+.background-filmdash-button:hover:after {
+  top: 0px;
+  left: 0.4%;
+  border-radius: 1.5%;
+}

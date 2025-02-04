@@ -6,7 +6,7 @@ export default function DessinTv() {
 
   const commonProps = {
     stroke: "var(--font-color)",
-    strokeWidth: 2,
+    strokeWidth: 2.5,
   };
 
   const tvPaths = [
@@ -54,6 +54,7 @@ export default function DessinTv() {
             transition={{
               duration: 1.5,
               ease: "easeInOut",
+              delay: index * 0.02
              }}
           />
         ))}
