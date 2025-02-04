@@ -21,11 +21,17 @@ function Projects() {
     <div className="general-disposition project-disposition">
       <motion.div
         className='project-entete'
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{
-          duration: 1.3,
-          ease: "easeInOut"
+          opacity:{
+            duration: 2,
+            ease: "easeInOut"
+          },
+          y:{
+            duration: 0.8,
+            ease: "easeInOut"
+          }
         }}
       >
         <h2>Projects</h2>
