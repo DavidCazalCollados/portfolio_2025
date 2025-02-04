@@ -6,7 +6,7 @@ export default function DessinTv() {
 
   const commonProps = {
     stroke: "var(--font-color)",
-    strokeWidth: 2,
+    strokeWidth: 2.5,
   };
 
   const tvPaths = [

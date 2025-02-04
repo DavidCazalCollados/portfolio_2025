@@ -8,6 +8,7 @@ import BorderProjects from "../components/BorderProjects";
 
 import "../assets/projects.css"
 import "../assets/general_disposition.css"
+import "../assets/background_filmdash_button.css"
 
 function Projects() {
   const projectHover = [
@@ -40,10 +41,13 @@ function Projects() {
       <div
         className='project-container'
         >
-          <div className='filmdash-project'>
-            <BorderProjects />
-            <DessinTv />
-          </div>
+          {/* <div className='filmdash-project'> */}
+            <Link to="/projects/filmdash" className='filmdash-project background-filmdash-button'>
+              <h4>Filmdash</h4>
+              <BorderProjects />
+              <DessinTv />
+            </Link>
+          {/* </div> */}
       </div>
     </div>
   )
