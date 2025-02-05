@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from "react-router";
-import coverFilmdash from "../assets/photos/cover_filmdash.jpg";
 import { motion } from "motion/react";
 
 import DessinTv from "../components/DessinTv";
@@ -11,13 +10,23 @@ import "../assets/general_disposition.css"
 import "../assets/background_filmdash_button.css"
 
 function Projects() {
-  const projectHover = [
-    {
-      projectName: 'Filmdash',
-      projectImage: "../assets/photos/FILMDASH_SCREEN.jpg",
-      projectVideo: "../assets/videos/SCREEN_REC_FILMDASH.mp4"
-    }
-  ];
+
+  const handleMouseEnter = (e) => {
+    e.currentTarget.firstElementChild.style.scale = "1.1"
+    e.currentTarget.firstElementChild.style.opacity = "100%"
+    e.currentTarget.lastElementChild.style.top = "0%"
+    e.currentTarget.lastElementChild.style.left = "0.4%"
+    e.currentTarget.lastElementChild.style.borderRadius = "1.5%"
+  }
+
+  const handleMouseLeave = (e) => {
+    e.currentTarget.firstElementChild.style.scale = "1"
+    e.currentTarget.firstElementChild.style.opacity = "50%"
+    e.currentTarget.lastElementChild.style.top = "3.5%"
+    e.currentTarget.lastElementChild.style.left = "2.5%"
+    e.currentTarget.lastElementChild.style.borderRadius = "7px"
+  }
+
   return(
     <div className="general-disposition project-disposition">
       <motion.div
@@ -26,7 +35,7 @@ function Projects() {
         animate={{ opacity: 1, y: 0 }}
         transition={{
           opacity:{
-            duration: 2,
+            duration: 3,
             ease: "easeInOut"
           },
           y:{
@@ -41,13 +50,29 @@ function Projects() {
       <div
         className='project-container'
         >
-          {/* <div className='filmdash-project'> */}
-            <Link to="/projects/filmdash" className='filmdash-project background-filmdash-button'>
-              <h4>Filmdash</h4>
-              <BorderProjects />
-              <DessinTv />
-            </Link>
-          {/* </div> */}
+          <Link
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+            to="/projects/filmdash"
+            className='filmdash-project filmdash-button'
+          >
+            <motion.h4
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 0.5}}
+              transition={{ duration: 2, ease: "easeInOut" }}
+            >
+                Filmdash
+            </motion.h4>
+            <BorderProjects />
+            <DessinTv />
+            <motion.div
+              className='test-background-filmdash'
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 2, ease: "easeInOut" }}
+            >
+            </motion.div>
+          </Link>
       </div>
     </div>
   )
