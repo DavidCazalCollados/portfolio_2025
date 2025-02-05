@@ -15,8 +15,6 @@ import selectionImage from "../../assets/photos/screen_function/selection_photo.
 import selectionVideo from "../../assets/photos/screen_function/selection_video.mp4";
 import watchlistImage from "../../assets/photos/screen_function/watchlist_photo.jpg";
 import watchlistVideo from "../../assets/photos/screen_function/watchlist_video.mp4";
-import { behavior } from '@testing-library/user-event/dist/cjs/event/behavior/registry.js';
-import { path } from 'framer-motion/client';
 
 function FilmDash() {
 
@@ -105,7 +103,7 @@ function FilmDash() {
               <div className='development-filmdash'>
                 <div className='development-text-filmdash'>
                   <p>
-                    The project was developed as a final
+                    The app was developed as a final
                     project during a 2-month coding bootcamp at Le Wagon, where it was chosen
                     from a pool of ideas and built by a team of 3 developers over a 2-week agile sprint.
                     By using the TMDB API, the app allows you to quickly access a selection of movies, available instantly!
