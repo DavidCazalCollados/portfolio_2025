@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from "react-router";
 import { motion } from "motion/react";
 
@@ -11,26 +11,24 @@ import "../assets/background_filmdash_button.css"
 
 function Projects() {
 
-  const handleMouseEnter = (e) => {
-    e.currentTarget.firstElementChild.style.scale = "1.1"
-    e.currentTarget.firstElementChild.style.opacity = "100%"
-    e.currentTarget.lastElementChild.style.top = "0%"
-    e.currentTarget.lastElementChild.style.left = "0.4%"
-    e.currentTarget.lastElementChild.style.borderRadius = "1.5%"
-  }
+  const [isHovered, setIsHovered] = useState(false);
 
-  const handleMouseLeave = (e) => {
-    e.currentTarget.firstElementChild.style.scale = "1"
-    e.currentTarget.firstElementChild.style.opacity = "50%"
-    e.currentTarget.lastElementChild.style.top = "3.5%"
-    e.currentTarget.lastElementChild.style.left = "2.5%"
-    e.currentTarget.lastElementChild.style.borderRadius = "7px"
+  const hoverStylesTitle = {
+    scale: isHovered ? "1.1" : "1",
+    opacity: isHovered ? "100%" : "50%",
+  };
+
+  const hoverStylesBackground = {
+    top: isHovered ? "0%" : "3.5%",
+    left: isHovered ? "0.4%" : "2.5%",
+    borderRadius: isHovered ? "1.5%" : "7px"
   }
 
   return(
     <div className="general-disposition project-disposition">
       <motion.div
         className='project-entete'
+        // Animation
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
@@ -51,14 +49,16 @@ function Projects() {
         className='project-container'
         >
           <Link
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
             to="/projects/filmdash"
             className='filmdash-project filmdash-button'
           >
             <motion.h4
+              // Animation
               initial={{ opacity: 0 }}
               animate={{ opacity: 0.5}}
+              style={hoverStylesTitle}
               transition={{ duration: 2, ease: "easeInOut" }}
             >
                 Filmdash
@@ -67,6 +67,8 @@ function Projects() {
             <DessinTv />
             <motion.div
               className='test-background-filmdash'
+              style={hoverStylesBackground}
+              // Animation
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 2, ease: "easeInOut" }}
