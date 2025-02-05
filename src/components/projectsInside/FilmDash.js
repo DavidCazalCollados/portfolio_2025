@@ -1,6 +1,7 @@
 // import { div, img, react } from 'motion/react-client';
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { motion } from "framer-motion";
 import HoverVideoPlayer from 'react-hover-video-player';
 
 import '../../assets/banner.css';
@@ -15,6 +16,7 @@ import selectionImage from "../../assets/photos/screen_function/selection_photo.
 import selectionVideo from "../../assets/photos/screen_function/selection_video.mp4";
 import watchlistImage from "../../assets/photos/screen_function/watchlist_photo.jpg";
 import watchlistVideo from "../../assets/photos/screen_function/watchlist_video.mp4";
+import projector from "../../assets/photos/projector.jpg"
 
 function FilmDash() {
 
@@ -73,10 +75,26 @@ function FilmDash() {
   ];
 
   return(
-    <div className='filmdash-container'>
+    <div>
       <section className='banner-filmdash'>
+        <motion.div
+          className='top-line-banner'
+          initial={{ left: "-35%" }}
+          animate={{ left: "100%" }}
+          transition={{ duration: 2, ease: "easeInOut", delay: 1 }}
+        >
+
+        </motion.div>
         <h1>FilmDash</h1>
         <h4>Your cinematic journey!</h4>
+        <img className="background-banner" alt='A cinematic projector' src={projector}/>
+        <motion.div
+          className='bottom-line-banner'
+          initial={{ left: "100%" }}
+          animate={{ left: "-35%" }}
+          transition={{ duration: 2, ease: "easeInOut", delay: 1 }}
+        >
+        </motion.div>
       </section>
 
       <div className='general-disposition gap-section'>
@@ -174,7 +192,7 @@ function FilmDash() {
 
         <section className='button-filmdash-page'>
           <Link to='https://www.filmdash.online/' target='_blank' >
-            <button className='button-try-it'>Try it!</button>
+            <button aria-label="Try FilmDash" className='button-try-it'>Try it!</button>
           </Link>
         </section>
       </div>

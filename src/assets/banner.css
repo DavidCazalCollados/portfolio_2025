@@ -1,7 +1,6 @@
 .banner-filmdash {
-  /* background-image: url('./photos/projector.jpg'); */
-  margin-top: 2%;
-  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.2)), url('./photos/projector.jpg');
+  position: relative;
+  /* background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.2)), url('./photos/projector.jpg'); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11,4 +10,35 @@
   gap: 4%;
   justify-content: center;
   align-items: center;
+  margin-top: 2%;
+  margin-bottom: 15vh;
+}
+
+.background-banner {
+  position: absolute;
+  object-fit: cover;
+  position: center;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  filter: brightness(65%);
+  opacity: 95%;
+}
+
+.top-line-banner {
+  position: absolute;
+  height: 2px;
+  width: 35%;
+  background-color: red;
+  top: 0;
+  left: 0;
+}
+
+.bottom-line-banner {
+  position: absolute;
+  background-color: aqua;
+  height: 2px;
+  width: 35%;
+  top: 100%;
+  left: 65%;
 }
