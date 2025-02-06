@@ -8,6 +8,7 @@ import BorderProjects from "../components/BorderProjects";
 import "../assets/projects.css"
 import "../assets/general_disposition.css"
 import "../assets/background_filmdash_button.css"
+import { filter } from 'framer-motion/client';
 
 function Projects() {
 
@@ -15,7 +16,7 @@ function Projects() {
 
   const hoverStylesTitle = {
     scale: isHovered ? "1.1" : "1",
-    opacity: isHovered ? "100%" : "50%",
+    color: isHovered ? "#ffe372f0" : "#ffe3729e"
   };
 
   const hoverStylesBackground = {
@@ -56,9 +57,11 @@ function Projects() {
           >
             <motion.h4
               // Animation
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 0.5}}
+              // initial={{ opacity: 0 }}
+              // animate={{ opacity: 0.5}}
               style={hoverStylesTitle}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
               transition={{ duration: 2, ease: "easeInOut" }}
             >
                 Filmdash

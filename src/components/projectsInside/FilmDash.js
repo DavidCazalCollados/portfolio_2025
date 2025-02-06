@@ -1,6 +1,7 @@
 // import { div, img, react } from 'motion/react-client';
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { delay, motion } from "framer-motion";
 import HoverVideoPlayer from 'react-hover-video-player';
 
 import '../../assets/banner.css';
@@ -15,8 +16,7 @@ import selectionImage from "../../assets/photos/screen_function/selection_photo.
 import selectionVideo from "../../assets/photos/screen_function/selection_video.mp4";
 import watchlistImage from "../../assets/photos/screen_function/watchlist_photo.jpg";
 import watchlistVideo from "../../assets/photos/screen_function/watchlist_video.mp4";
-import { behavior } from '@testing-library/user-event/dist/cjs/event/behavior/registry.js';
-import { path } from 'framer-motion/client';
+import projector from "../../assets/photos/projector.jpg"
 
 function FilmDash() {
 
@@ -75,13 +75,42 @@ function FilmDash() {
   ];
 
   return(
-    <div className='filmdash-container'>
+    <div>
       <section className='banner-filmdash'>
-        <h1>FilmDash</h1>
-        <h4>Your cinematic journey!</h4>
+        <motion.div
+          className='top-line-banner'
+          initial={{ left: "-35%" }}
+          animate={{ left: "100%" }}
+          transition={{
+            duration: 1, ease: "easeInOut", delay: 1
+          }}
+        >
+        </motion.div>
+        <motion.div
+          className='text-banner'
+          initial={{ opacity: 0, y: "50%" }}
+          animate={{ opacity: 1, y: "0%" }}
+          transition={{ duration: 1, ease:"easeInOut", delay: 2 }}
+        >
+          <h1>FilmDash</h1>
+          <h4>Your cinematic journey!</h4>
+        </motion.div>
+        <motion.img
+          className="background-banner"
+          alt='A cinematic projector'
+          src={projector}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, ease:"easeInOut", delay: 2 }}
+        />
       </section>
 
-      <div className='general-disposition gap-section'>
+      <motion.div
+        className='general-disposition gap-section'
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, ease: "easeInOut", delay: 2 }}
+      >
 
         <section className='about-section'>
             <div className='about-title'>
@@ -105,7 +134,7 @@ function FilmDash() {
               <div className='development-filmdash'>
                 <div className='development-text-filmdash'>
                   <p>
-                    The project was developed as a final
+                    The app was developed as a final
                     project during a 2-month coding bootcamp at Le Wagon, where it was chosen
                     from a pool of ideas and built by a team of 3 developers over a 2-week agile sprint.
                     By using the TMDB API, the app allows you to quickly access a selection of movies, available instantly!
@@ -176,10 +205,10 @@ function FilmDash() {
 
         <section className='button-filmdash-page'>
           <Link to='https://www.filmdash.online/' target='_blank' >
-            <button className='button-try-it'>Try it!</button>
+            <button aria-label="Try FilmDash" className='button-try-it'>Try it!</button>
           </Link>
         </section>
-      </div>
+      </motion.div>
     </div>
   )
 }

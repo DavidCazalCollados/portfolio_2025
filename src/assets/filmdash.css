@@ -1,7 +1,9 @@
 .filmdash-container {
   display: flex;
   flex-direction: column;
-  gap: 15vh ;
+  position: relative;
+  gap: 15vh;
+  padding-top: 2%;
 }
 
 /* Banner */
