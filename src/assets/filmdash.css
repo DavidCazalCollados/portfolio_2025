@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  gap: 15vh;
   padding-top: 2%;
 }
 
@@ -21,7 +20,7 @@
 .gap-section {
   display: flex;
   flex-direction: column;
-  gap: 23vh;
+  gap: 18vh;
 }
 
 /* ABOUT SECTION */
@@ -82,11 +81,8 @@
 }
 
 .begin-presentation-filmdash {
-  /* background-color: brown; */
-  font-size: 2em;
+  font-size: 2.3vw;
   font-weight: 200;
-  /* border-top: 1px var(--font-color) solid; */
-  /* border-bottom: 1px var(--font-color) solid; */
   padding: 2%;
 }
 
@@ -102,7 +98,6 @@
   display: flex;
   gap: 5%;
   height: 45vh;
-
 }
 
 .development-picture-filmdash {
@@ -122,7 +117,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  font-size: 1.5em;
+  font-size: 1.7vw;
   font-weight: 200;
   margin: 0;
   padding: 0;
