@@ -34,6 +34,9 @@ function FilmDash() {
 
   // Scroll animation variables
   const opacity = useTransform(scrollY, [44, 476], [0, 1]);
+  const opacitySecond = useTransform(scrollY, [530, 875], [0, 1]);
+  const opacityTech = useTransform(scrollY, [1080, 1150], [0, 1]);
+
   const pathLengthTop = useSpring(useTransform(scrollY, [150, 400], [0, 1]), {
     damping: 30,
     stiffness: 300
@@ -42,12 +45,21 @@ function FilmDash() {
     damping: 30,
     stiffness: 300
   });
-  const contentMoveAbout = useSpring(useTransform(scrollY, [150, 500], ["50%", "0%"]), {
+  const pathLengthSecond = useSpring(useTransform(scrollY, [876, 1100], [0, 1]), {
     damping: 30,
     stiffness: 300
   });
 
-  const contentMoveAboutSecond = useSpring(useTransform(scrollY, [535, 500], ["50%", "0%"]), {
+
+  const contentMoveAbout = useSpring(useTransform(scrollY, [150, 500], ["50%", "0%"]), {
+    damping: 30,
+    stiffness: 300
+  });
+  const contentMoveAboutSecond = useSpring(useTransform(scrollY, [535, 900], ["-50%", "0%"]), {
+    damping: 30,
+    stiffness: 300
+  });
+  const contentMoveAboutSecondPhoto = useSpring(useTransform(scrollY, [535, 900], ["50%", "0%"]), {
     damping: 30,
     stiffness: 300
   });
@@ -107,7 +119,7 @@ function FilmDash() {
   ];
 
   return(
-    <div>
+    <div >
       <section className='banner-filmdash'>
         <motion.div
           className='top-line-banner'
@@ -203,24 +215,45 @@ function FilmDash() {
                 </div>
               </div>
 
-              <div className='development-filmdash'>
+              <motion.div
+                className='development-filmdash'
+                style={{opacity: opacitySecond}}
+              >
                 <div className='development-text-filmdash'>
-                  <p>
+                  <motion.p
+                    style={{x: contentMoveAboutSecond}}
+                  >
                     The app was developed as a final
                     project during a 2-month coding bootcamp at Le Wagon, where it was chosen
                     from a pool of ideas and built by a team of 3 developers over a 2-week agile sprint.
                     By using the TMDB API, the app allows you to quickly access a selection of movies, available instantly!
-                  </p>
-                  <div className='border-development-filmdash'></div>
+                  </motion.p>
+                  <svg
+                    width="100%"
+                    viewBox="0 0 591 2"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio='none'
+                  >
+                    <motion.path
+                      d="M150 1H295.25H450.5"
+                      stroke="var(--font-color)"
+                      strokeWidth="1"
+                      style={{pathLength: pathLengthSecond}}
+                    />
+                  </svg>
                 </div>
-                <div className='development-picture-filmdash'>
-                </div>
-              </div>
+                <motion.div
+                  className='development-picture-filmdash'
+                  style={{x: contentMoveAboutSecondPhoto}}
+                >
+                </motion.div>
+              </motion.div>
             </div>
         </section>
 
         <section className='language-used'>
-          <p> TECH STACK</p>
+          <p>TECH STACK</p>
           <ul>
             {languagesLogo.map((item,index) => (
               <li className={item.name} key={index}>
