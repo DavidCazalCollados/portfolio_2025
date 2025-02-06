@@ -47,6 +47,11 @@ function FilmDash() {
     stiffness: 300
   });
 
+  const contentMoveAboutSecond = useSpring(useTransform(scrollY, [535, 500], ["50%", "0%"]), {
+    damping: 30,
+    stiffness: 300
+  });
+
   const filmdashHover = [
     {
       sectionName: "preferences",
