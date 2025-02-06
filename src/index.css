@@ -5,6 +5,10 @@
   --font-color: #303030 !important;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: 'Fira Sans', sans-serif, 'Yeseva One', serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
