@@ -1,7 +1,12 @@
 // import { div, img, react } from 'motion/react-client';
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { delay, motion } from "framer-motion";
+import {
+        motion,
+        useMotionValueEvent,
+        useScroll,
+        useTransform
+      } from "framer-motion";
 import HoverVideoPlayer from 'react-hover-video-player';
 
 import '../../assets/banner.css';
@@ -19,6 +24,14 @@ import watchlistVideo from "../../assets/photos/screen_function/watchlist_video.
 import projector from "../../assets/photos/projector.jpg"
 
 function FilmDash() {
+
+  const {scrollY} = useScroll();
+
+  useMotionValueEvent(scrollY, "change", (val) => {
+    console.log(val);
+  });
+
+  const opacity = useTransform(scrollY, [44, 476], [0, 1]);
 
   const filmdashHover = [
     {
@@ -118,16 +131,44 @@ function FilmDash() {
             </div>
             <div className='intro-section'>
               <div className='intro-filmdash'>
-                <div className='presentation-picture-filmdash'>
-                </div>
+                <motion.div
+                  className='presentation-picture-filmdash'
+                  style={{
+                    opacity
+                  }}
+                >
+                </motion.div>
                 <div className='text-presentation-filmdash'>
-                  <div className='begin-presentation-filmdash'>
+                  <svg
+                    width="100%"
+                    viewBox="0 0 591 2"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio='none'
+                  >
+                    <path d="M0 1H295.25H590.5" stroke="var(--font-color)" stroke-width="0.7"/>
+                  </svg>
+                  <motion.div
+                    className='begin-presentation-filmdash'
+                    style={{
+                      opacity
+                    }}
+                  >
                     <p>
                       FilmDash is a web application designed for mobile-first experiences,
                       aiming to help working professionals and students (ages 20-50) find tailored
                       entertainment quickly and easily.
                     </p>
-                  </div>
+                  </motion.div>
+                  <svg
+                    width="100%"
+                    viewBox="0 0 591 2"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio='none'
+                  >
+                    <path d="M0 1H295.25H590.5" stroke="var(--font-color)" stroke-width="0.7"/>
+                  </svg>
                 </div>
               </div>
 
