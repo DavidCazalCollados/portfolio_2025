@@ -85,8 +85,8 @@
   /* background-color: brown; */
   font-size: 2em;
   font-weight: 200;
-  border-top: 1px var(--font-color) solid;
-  border-bottom: 1px var(--font-color) solid;
+  /* border-top: 1px var(--font-color) solid; */
+  /* border-bottom: 1px var(--font-color) solid; */
   padding: 2%;
 }
 

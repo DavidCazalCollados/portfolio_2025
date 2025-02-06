@@ -56,9 +56,6 @@ function Projects() {
             className='filmdash-project filmdash-button'
           >
             <motion.h4
-              // Animation
-              // initial={{ opacity: 0 }}
-              // animate={{ opacity: 0.5}}
               style={hoverStylesTitle}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}

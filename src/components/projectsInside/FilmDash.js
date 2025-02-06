@@ -1,7 +1,13 @@
 // import { div, img, react } from 'motion/react-client';
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { delay, motion } from "framer-motion";
+import {
+        motion,
+        useMotionValueEvent,
+        useScroll,
+        useTransform,
+        useSpring
+      } from "framer-motion";
 import HoverVideoPlayer from 'react-hover-video-player';
 
 import '../../assets/banner.css';
@@ -19,6 +25,27 @@ import watchlistVideo from "../../assets/photos/screen_function/watchlist_video.
 import projector from "../../assets/photos/projector.jpg"
 
 function FilmDash() {
+
+  const {scrollY} = useScroll();
+
+  useMotionValueEvent(scrollY, "change", (val) => {
+    console.log(val);
+  });
+
+  // Scroll animation variables
+  const opacity = useTransform(scrollY, [44, 476], [0, 1]);
+  const pathLengthTop = useSpring(useTransform(scrollY, [150, 400], [0, 1]), {
+    damping: 30,
+    stiffness: 300
+  });
+  const pathLengthBottom = useSpring(useTransform(scrollY, [370, 500], [0, 1]), {
+    damping: 30,
+    stiffness: 300
+  });
+  const contentMoveAbout = useSpring(useTransform(scrollY, [150, 500], ["50%", "0%"]), {
+    damping: 30,
+    stiffness: 300
+  });
 
   const filmdashHover = [
     {
@@ -118,16 +145,56 @@ function FilmDash() {
             </div>
             <div className='intro-section'>
               <div className='intro-filmdash'>
-                <div className='presentation-picture-filmdash'>
-                </div>
+                <motion.div
+                  className='presentation-picture-filmdash'
+                  style={{
+                    opacity
+                  }}
+                >
+                </motion.div>
                 <div className='text-presentation-filmdash'>
-                  <div className='begin-presentation-filmdash'>
-                    <p>
+                  <svg
+                    width="100%"
+                    viewBox="0 0 591 2"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio='none'
+                  >
+                    <motion.path
+                      d="M0 1H295.25H590.5"
+                      stroke="var(--font-color)"
+                      strokeWidth="0.7"
+                      style={{pathLength: pathLengthTop}}
+                    />
+                  </svg>
+                  <motion.div
+                    className='begin-presentation-filmdash'
+                    style={{
+                      opacity
+                    }}
+                  >
+                    <motion.p
+                      style={{ x: contentMoveAbout }}
+                    >
                       FilmDash is a web application designed for mobile-first experiences,
                       aiming to help working professionals and students (ages 20-50) find tailored
                       entertainment quickly and easily.
-                    </p>
-                  </div>
+                    </motion.p>
+                  </motion.div>
+                  <svg
+                    width="100%"
+                    viewBox="0 0 591 2"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio='none'
+                  >
+                    <motion.path
+                      d="M590.5 1H295.25H0"
+                      stroke="var(--font-color)"
+                      strokeWidth="0.7"
+                      style={{pathLength: pathLengthBottom}}
+                    />
+                  </svg>
                 </div>
               </div>
 
