@@ -1,6 +1,7 @@
 .banner-filmdash {
   position: relative;
   /* background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.2)), url('./photos/projector.jpg'); */
+  overflow-x: hidden;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -27,18 +28,13 @@
 
 .top-line-banner {
   position: absolute;
-  height: 2px;
+  height: 1px;
   width: 35%;
-  background-color: red;
+  background-color: rgb(71, 71, 71);
   top: 0;
   left: 0;
 }
 
-.bottom-line-banner {
-  position: absolute;
-  background-color: aqua;
-  height: 2px;
-  width: 35%;
-  top: 100%;
-  left: 65%;
+.text-banner {
+  text-align: center;
 }

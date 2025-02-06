@@ -1,7 +1,7 @@
 // import { div, img, react } from 'motion/react-client';
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { motion } from "framer-motion";
+import { delay, motion } from "framer-motion";
 import HoverVideoPlayer from 'react-hover-video-player';
 
 import '../../assets/banner.css';
@@ -81,23 +81,36 @@ function FilmDash() {
           className='top-line-banner'
           initial={{ left: "-35%" }}
           animate={{ left: "100%" }}
-          transition={{ duration: 2, ease: "easeInOut", delay: 1 }}
+          transition={{
+            duration: 1, ease: "easeInOut", delay: 1
+          }}
         >
-
         </motion.div>
-        <h1>FilmDash</h1>
-        <h4>Your cinematic journey!</h4>
-        <img className="background-banner" alt='A cinematic projector' src={projector}/>
         <motion.div
-          className='bottom-line-banner'
-          initial={{ left: "100%" }}
-          animate={{ left: "-35%" }}
-          transition={{ duration: 2, ease: "easeInOut", delay: 1 }}
+          className='text-banner'
+          initial={{ opacity: 0, y: "50%" }}
+          animate={{ opacity: 1, y: "0%" }}
+          transition={{ duration: 1, ease:"easeInOut", delay: 2 }}
         >
+          <h1>FilmDash</h1>
+          <h4>Your cinematic journey!</h4>
         </motion.div>
+        <motion.img
+          className="background-banner"
+          alt='A cinematic projector'
+          src={projector}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, ease:"easeInOut", delay: 2 }}
+        />
       </section>
 
-      <div className='general-disposition gap-section'>
+      <motion.div
+        className='general-disposition gap-section'
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, ease: "easeInOut", delay: 2 }}
+      >
 
         <section className='about-section'>
             <div className='about-title'>
@@ -195,7 +208,7 @@ function FilmDash() {
             <button aria-label="Try FilmDash" className='button-try-it'>Try it!</button>
           </Link>
         </section>
-      </div>
+      </motion.div>
     </div>
   )
 }
