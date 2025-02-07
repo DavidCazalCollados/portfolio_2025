@@ -55,6 +55,10 @@ function FilmDash() {
     damping: 30,
     stiffness: 300
   });
+  const photoMoveAbout = useSpring(useTransform(scrollY, [150, 500], ["50%", "0%"]), {
+    damping: 30,
+    stiffness: 300
+  });
   const contentMoveAboutSecond = useSpring(useTransform(scrollY, [535, 900], ["-50%", "0%"]), {
     damping: 30,
     stiffness: 300
@@ -201,7 +205,8 @@ function FilmDash() {
                 <motion.div
                   className='presentation-picture-filmdash'
                   style={{
-                    opacity
+                    opacity: opacity,
+                    x: photoMoveAbout
                   }}
                 >
                 </motion.div>
