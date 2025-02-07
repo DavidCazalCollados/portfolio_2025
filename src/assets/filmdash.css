@@ -201,6 +201,14 @@
 
 /* Caroussel settings */
 
+.border-top {
+  position: absolute;
+}
+
+.border-left {
+  position: absolute;
+}
+
 .caroussel-container-filmdash {
   position: relative;
 

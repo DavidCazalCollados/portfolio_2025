@@ -55,7 +55,7 @@ function FilmDash() {
     damping: 30,
     stiffness: 300
   });
-  const photoMoveAbout = useSpring(useTransform(scrollY, [150, 500], ["50%", "0%"]), {
+  const photoMoveAbout = useSpring(useTransform(scrollY, [150, 500], ["-20%", "0%"]), {
     damping: 30,
     stiffness: 300
   });
@@ -319,7 +319,9 @@ function FilmDash() {
             <p>How do you use it?</p>
           </div>
           <div className='every-function-container'>
-            <div className='caroussel-container-filmdash'>
+            <div
+              className='caroussel-container-filmdash'
+            >
               <div className='border-caroussel-left'></div>
               <div className='border-caroussel-right'></div>
               <Caroussel />
