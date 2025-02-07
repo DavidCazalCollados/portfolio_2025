@@ -31,9 +31,9 @@ function FilmDash() {
 
   useEffect(() => {
     setTimeout(function () {
-      console.log("Delayed for 2 second.");
+      console.log("Delayed for 1 second.");
       setIsFetching(false);
-    }, 2000);
+    }, 1000);
   }, []);
 
   const {scrollY} = useScroll();

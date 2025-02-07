@@ -1,13 +1,9 @@
 .leftnav {
   top: 0;
-  /* height: 100%; */
-  width: 5%;
+  width: 8vh;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
-  /* text-align: center; */
   position: absolute;
-  /* overflow: hidden; */
-  /* background-color: blue; */
   overflow: hidden;
   display: flex;
   text-align: center;
@@ -24,11 +20,6 @@
   letter-spacing: 0.6rem;
   font-size: 0.7em;
   /* background-color: blue; */
-  /* background-color: cadetblue; */
-}
-
-li a {
-  mix-blend-mode: exclusion;
 }
 
 .leftnav ul {

@@ -3,6 +3,7 @@
 :root {
   --background-color: #ece7e1 !important;
   --font-color: #303030 !important;
+  --border-project: #f6f6f6 !important;
 }
 
 html{
