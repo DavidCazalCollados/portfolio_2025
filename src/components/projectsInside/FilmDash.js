@@ -97,6 +97,15 @@ function FilmDash() {
     stiffness: 300
   });
 
+  const scalePhones = useSpring(useTransform(scrollY, [2355, 2725], [0.9, 1]), {
+    damping: 30,
+    stiffness: 300
+  });
+  const scaleCaroussel = useSpring(useTransform(scrollY, [1675, 2150], [0.9, 1]), {
+    damping: 30,
+    stiffness: 300
+  });
+
   const filmdashHover = [
     {
       sectionName: "preferences",
@@ -319,20 +328,25 @@ function FilmDash() {
             <p>How do you use it?</p>
           </div>
           <div className='every-function-container'>
-            <div
+            <motion.div
               className='caroussel-container-filmdash'
+              style={{scale: scaleCaroussel}}
             >
               <div className='border-caroussel-left'></div>
               <div className='border-caroussel-right'></div>
               <Caroussel />
-            </div>
+            </motion.div>
 
             <div className='separation-function'>
               <div className='line-separation'></div>
             </div>
             <div className='function-filmdash'>
               {filmdashHover.map((item, index) => (
-                <div key={index} className={`${item.sectionName}-container`}>
+                <motion.div
+                  key={index}
+                  className={`${item.sectionName}-container`}
+                  style={{scale: scalePhones}}
+                >
                   <HoverVideoPlayer
                     videoSrc={item.sectionVideo}
                     pausedOverlay={
@@ -346,7 +360,7 @@ function FilmDash() {
                   <div key={index} className={`${item.sectionName}-infos`}>
                     <p>{item.description}</p>
                   </div>
-                </div>
+                </motion.div>
               ))}
             </div>
           </div>
