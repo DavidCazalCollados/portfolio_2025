@@ -1,5 +1,5 @@
 // import { div, img, react } from 'motion/react-client';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import {
         motion,
@@ -23,9 +23,18 @@ import selectionVideo from "../../assets/photos/screen_function/selection_video.
 import watchlistImage from "../../assets/photos/screen_function/watchlist_photo.jpg";
 import watchlistVideo from "../../assets/photos/screen_function/watchlist_video.mp4";
 import projector from "../../assets/photos/projector.jpg"
-import { style } from 'framer-motion/client';
+import Spinner from '../Spinner';
 
 function FilmDash() {
+
+  const [isFetching, setIsFetching] = useState(true);
+
+  useEffect(() => {
+    setTimeout(function () {
+      console.log("Delayed for 2 second.");
+      setIsFetching(false);
+    }, 2000);
+  }, []);
 
   const {scrollY} = useScroll();
 
@@ -167,6 +176,12 @@ function FilmDash() {
     }
   ];
 
+  if (isFetching) {
+    return (
+      <Spinner />
+    );
+  };
+
   return(
     <div >
       <section className='banner-filmdash'>
@@ -175,7 +190,7 @@ function FilmDash() {
           initial={{ left: "-35%" }}
           animate={{ left: "100%" }}
           transition={{
-            duration: 1, ease: "easeInOut", delay: 1
+            duration: 1, ease: "easeInOut"
           }}
         >
         </motion.div>
@@ -183,7 +198,7 @@ function FilmDash() {
           className='text-banner'
           initial={{ opacity: 0, y: "50%" }}
           animate={{ opacity: 1, y: "0%" }}
-          transition={{ duration: 1, ease:"easeInOut", delay: 2 }}
+          transition={{ duration: 1, ease:"easeInOut", delay: 1 }}
         >
           <h1>FilmDash</h1>
           <h4>Your cinematic journey!</h4>
@@ -194,7 +209,7 @@ function FilmDash() {
           src={projector}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1, ease:"easeInOut", delay: 2 }}
+          transition={{ duration: 1, ease:"easeInOut", delay: 1 }}
         />
       </section>
 
@@ -202,7 +217,7 @@ function FilmDash() {
         className='general-disposition gap-section'
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 1, ease: "easeInOut", delay: 2 }}
+        transition={{ duration: 1, ease: "easeInOut", delay: 1 }}
       >
 
         <section className='about-section'>
