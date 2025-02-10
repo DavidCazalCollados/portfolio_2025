@@ -25,8 +25,8 @@ function App() {
       ) : ( */}
         <div>
           <Navbar />
-          {/* <Rightbar /> */}
-          <Bottombar />
+          <Rightbar />
+          {/* <Bottombar /> */}
           <AnimatedRoutes />
           <Sidebar />
         </div>

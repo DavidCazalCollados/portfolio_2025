@@ -183,7 +183,7 @@ function FilmDash() {
   };
 
   return(
-    <div >
+    <div className='filmdash-container'>
       <section className='banner-filmdash'>
         <motion.div
           className='top-line-banner'
