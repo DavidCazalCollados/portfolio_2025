@@ -12,5 +12,5 @@
   height: 100%;
   z-index: 15;
   position: fixed;
-  background-color: var(--border-project);
+  background-color: var(--background-color);
 }

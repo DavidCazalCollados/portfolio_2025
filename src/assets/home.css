@@ -1,20 +1,19 @@
 
 .home-home {
-  height: 89vh;
-  /* background-color: aqua; */
+  height: 100vh;
   display: flex;
   align-items: center;
+  padding-top: 9%;
+  /* background-color: red; */
 }
 
 .home-left {
-  /* background-color: darkgoldenrod; */
   display: flex;
   flex-direction: column;
   font-family: 'Yeseva One', serif;
   width: 50%;
   height: 85%;
   color: #1a1818;
-  /* margin-top: 5%; */
 }
 
 .photo-home {
