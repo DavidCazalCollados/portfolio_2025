@@ -16,7 +16,7 @@ function Home() {
             <motion.p
               initial={{ x:"100%", opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
-              exit={{ x:"100%", opacity: 0 }}
+              // exit={{ x:"100%", opacity: 0 }}
               transition={{ ease: "easeInOut", duration: 1 }}
             >
               Hi there,
@@ -24,7 +24,7 @@ function Home() {
             <motion.p
               initial={{ x:"-100%", opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
-              exit={{ x:"-100%", opacity: 0 }}
+              // exit={{ x:"-100%", opacity: 0 }}
               transition={{ ease: "easeInOut", duration: 1, delay: 0.3 }}
             >
               I'm
@@ -32,7 +32,7 @@ function Home() {
             <motion.p
               initial={{ x:"100%", opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
-              exit={{ x:"100%", opacity: 0 }}
+              // exit={{ x:"100%", opacity: 0 }}
               transition={{ ease: "easeInOut", duration: 1, delay: 0.6 }}
             >
               David!
@@ -47,7 +47,7 @@ function Home() {
               <motion.path
                 initial={{ pathLength: 0 }}
                 animate={{ pathLength: 1 }}
-                exit={{ pathLength: 0 }}
+                // exit={{ pathLength: 0 }}
                 transition={{
                   duration: 1.5,
                   ease: "easeInOut",
@@ -61,7 +61,7 @@ function Home() {
             <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
+              // exit={{ opacity: 0 }}
               transition={{ ease: "easeInOut", duration: 1, delay: 0.9 }}
             >
               A front-end developer turning creativity into interactive web experiences.
@@ -71,7 +71,7 @@ function Home() {
             className='button-projects'
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
+            // exit={{ opacity: 0 }}
             transition={{
               ease: "easeInOut",
               duration: 1,
