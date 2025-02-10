@@ -8,7 +8,6 @@ import BorderProjects from "../components/BorderProjects";
 import "../assets/projects.css"
 import "../assets/general_disposition.css"
 import "../assets/background_filmdash_button.css"
-import { filter } from 'framer-motion/client';
 
 function Projects() {
 

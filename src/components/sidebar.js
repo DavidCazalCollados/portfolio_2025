@@ -23,13 +23,13 @@ class Sidebar extends React.Component {
           {info.map((item, index) => (
             <li key={`first-list-${index}`}>
               <motion.a
-              whileHover={{ scale: 1.3 }}
-              whileTap={{ scale: 0.95 }}
-              onHoverStart={() => console.log('hover started!')}
-              className="scroll-item"
-              href={item.url}
-              target="_blank"
-              rel="noopener noreferrer"
+                whileHover={{ scale: 1.3 }}
+                whileTap={{ scale: 0.95 }}
+                onHoverStart={() => console.log('hover started!')}
+                className="scroll-item"
+                href={item.url}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 {item.label}
               </motion.a>
@@ -40,13 +40,13 @@ class Sidebar extends React.Component {
           {info.map((item, index) => (
             <li key={`second-list-${index}`}>
               <motion.a
-              whileHover={{ scale: 1.3  }}
-              whileTap={{ scale: 0.95 }}
-              onHoverStart={() => console.log('hover started!')}
-              className="scroll-item"
-              href={item.url}
-              target="_blank"
-              rel="noopener noreferrer"
+                whileHover={{ scale: 1.3  }}
+                whileTap={{ scale: 0.95 }}
+                onHoverStart={() => console.log('hover started!')}
+                className="scroll-item"
+                href={item.url}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 {item.label}
               </motion.a>
