@@ -16,7 +16,6 @@ function Home() {
             <motion.p
               initial={{ x:"100%", opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
-              // exit={{ x:"100%", opacity: 0 }}
               transition={{ ease: "easeInOut", duration: 1 }}
             >
               Hi there,
@@ -24,7 +23,6 @@ function Home() {
             <motion.p
               initial={{ x:"-100%", opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
-              // exit={{ x:"-100%", opacity: 0 }}
               transition={{ ease: "easeInOut", duration: 1, delay: 0.3 }}
             >
               I'm
@@ -32,7 +30,6 @@ function Home() {
             <motion.p
               initial={{ x:"100%", opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
-              // exit={{ x:"100%", opacity: 0 }}
               transition={{ ease: "easeInOut", duration: 1, delay: 0.6 }}
             >
               David!
@@ -47,7 +44,6 @@ function Home() {
               <motion.path
                 initial={{ pathLength: 0 }}
                 animate={{ pathLength: 1 }}
-                // exit={{ pathLength: 0 }}
                 transition={{
                   duration: 1.5,
                   ease: "easeInOut",
@@ -61,7 +57,6 @@ function Home() {
             <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              // exit={{ opacity: 0 }}
               transition={{ ease: "easeInOut", duration: 1, delay: 0.9 }}
             >
               A front-end developer turning creativity into interactive web experiences.
@@ -71,7 +66,6 @@ function Home() {
             className='button-projects'
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            // exit={{ opacity: 0 }}
             transition={{
               ease: "easeInOut",
               duration: 1,
@@ -84,6 +78,40 @@ function Home() {
         </div>
         <div className='home-right'>
           <DessinComplet />
+          <motion.div
+            className='red-square'
+            initial={{ opacity: 0, top: "-15%" }}
+            animate={{ opacity: 1, top: "12%" }}
+            transition={{
+              ease: "easeInOut",
+              duration: 1,
+              delay: 1
+            }}
+            style={{
+              top: "12%"
+            }}
+          >
+            <Link className="about-link-home" to="/about">
+              About
+            </Link>
+          </motion.div>
+          <motion.div
+            className='blue-square'
+            initial={{ opacity: 0, top: "50%" }}
+            animate={{ opacity: 1, top: "40%" }}
+            transition={{
+              ease: "easeInOut",
+              duration: 1,
+              delay: 1
+            }}
+            style={{
+              top: "40%"
+            }}
+          >
+            <Link className="contact-link-home" to="/contact">
+              Contact
+            </Link>
+          </motion.div>
         </div>
       </section>
     </div>

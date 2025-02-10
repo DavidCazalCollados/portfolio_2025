@@ -31,11 +31,80 @@
 .home-right {
   display: flex;
   justify-content: end;
-  height: 60%;
+  position: relative;
+  padding-top: 11%;
+  height: 100%;
   width: 70%;
   /* background-color:burlywood; */
 }
 
+.red-square {
+  background-color: rgba(255, 101, 101, 0.246);
+  display: flex;
+  position: absolute;
+  height: 34%;
+  width: 37%;
+  left: 70%;
+  transition: transform .2s ease-in-out;
+  border: 0.5px black solid;
+}
+
+.red-square a {
+  text-decoration: none; font-family: 'Yeseva One', serif ;
+  color: var(--font-color);
+  font-size: 2.5vw;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: opacity .2s ease-in-out;
+  /* background-color: aliceblue; */
+
+}
+
+.red-square a:hover {
+  /* opacity: 1; */
+}
+
+.red-square:hover {
+  transform: scale(1.1);
+}
+
+.blue-square {
+  background-color: rgba(109, 180, 255, 0.292);
+  position: absolute;
+  height: 34%;
+  width: 37%;
+  left: 25%;
+  transition: transform .2s ease-in-out;
+  border: 0.5px black solid;
+  /* z-index: -1; */
+}
+
+.blue-square a {
+  text-decoration: none; font-family: 'Yeseva One', serif ;
+  color: var(--font-color);
+  font-size: 2.5vw;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: opacity .2s ease-in-out;
+  /* background-color: aliceblue; */
+
+}
+
+.blue-square a:hover {
+  /* opacity: 1; */
+}
+
+.blue-square:hover {
+  transform: scale(1.1)
+}
 
 .presentation {
   line-height: 0.9;
