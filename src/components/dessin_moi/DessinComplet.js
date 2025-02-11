@@ -22,9 +22,9 @@ export default function DessinComplet() {
   return (
     <div>
       <svg
-      className='draw-container'
-        width="405"
-        height="292"
+        className='draw-container'
+        width="30vw"
+        height="42vh"
         viewBox="0 0 405 292"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -35,7 +35,6 @@ export default function DessinComplet() {
             key={index}
             initial={{ opacity: 0, pathLength: 0 }}
             animate={{ opacity: 1, pathLength: 1 }}
-            // exit={{ opacity: 0, pathLength: 0 }}
             d={item.path}
             stroke="var(--font-color)"
             strokeWidth="1"

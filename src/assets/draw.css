@@ -1,25 +1,3 @@
-/* .boucle-gauche,
-.lunette-deux,
-.boucle-droite {
-  position: absolute;
-
+.draw-container {
+  /* background-color: rebeccapurple; */
 }
-
-.lunette-deux {
-  top: 30%;
-  left: 58%;
-}
-
-.boucle-gauche {
-  top: 52%;
-  left: 56%;
-}
-
-.boucle-droite {
-  top: 63%;
-  left:79%;
-}
-
-.test {
-  background-color: red;
-} */
