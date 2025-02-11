@@ -14,18 +14,11 @@
   width: 50%;
   height: 85%;
   color: #1a1818;
+  font-size: 1.1vw;
 }
 
-.photo-home {
-  height: 50%;
-  width: 60%;
-  background-image: url('../assets/photos/moi_01.jpg');
-  background-position: center;
-  background-repeat: none;
-  background-size: cover;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  border-radius: 8px;
-  /* clip-path: polygon(50% 0%, 0% 100%, 100% 100%); */
+.svg-container p{
+  font-size: 1.1vw;
 }
 
 .home-right {
@@ -35,15 +28,14 @@
   padding-top: 11%;
   height: 100%;
   width: 70%;
-  /* background-color:burlywood; */
 }
 
 .red-square {
   background-color: rgba(255, 101, 101, 0.246);
   display: flex;
   position: absolute;
-  height: 34%;
-  width: 37%;
+  height: 30vh;
+  width: 16vw;
   left: 70%;
   transition: transform .2s ease-in-out;
   border: 0.5px black solid;
@@ -75,8 +67,8 @@
 .blue-square {
   background-color: rgba(109, 180, 255, 0.292);
   position: absolute;
-  height: 34%;
-  width: 37%;
+  height: 30vh;
+  width: 16vw;
   left: 25%;
   transition: transform .2s ease-in-out;
   border: 0.5px black solid;
@@ -149,4 +141,8 @@
   height: 100%;
   display: flex;
   align-items: center;
+}
+
+@media (min-width: 420px) {
+
 }
