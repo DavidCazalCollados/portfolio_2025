@@ -63,7 +63,6 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2); /* Assombrit le contenu en dessous */
-  z-index: 200;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
@@ -73,6 +72,7 @@
   .topnav {
     height: auto;
     position: fixed;
+    z-index: 850;
   }
 
   .navbar-portfolio {
@@ -97,6 +97,7 @@
     display: flex;
     align-items: center;
     gap: 4%;
+    /* background-color: rebeccapurple; */
   }
 
   .name-separation {
@@ -108,11 +109,17 @@
   .navline a {
     text-decoration: none;
     margin: 0;
+    padding: 0;
     font-family: 'Yeseva One', serif;
-    line-height: 1;
     color: var(--font-color);
     font-size: 5vw;
-    /* text-transform: uppercase; */
+    height: 100%;
+  }
+
+  .navline p {
+    margin: 0;
+    padding: 0;
+    line-height: 0;
   }
 
   .button-link {
@@ -120,6 +127,10 @@
     font-size: 0vw;
     transition: .5s ease-in-out;
     opacity: 0;
+  }
+
+  .button-link:hover {
+    transform: scale(1);
   }
 
   .show {
@@ -142,6 +153,7 @@
     position: absolute;
     padding: 0;
     border: 0;
+    border-radius: 0;
     height: 0;
     width: 100%;
     transition: all .4s ease-in-out;
