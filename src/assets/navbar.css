@@ -56,8 +56,17 @@
   display: none;
 }
 
-.shadow-dropdown {
-  display: none;
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2); /* Assombrit le contenu en dessous */
+  z-index: 200;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
 }
 
 @media (max-width: 420px) {
@@ -79,6 +88,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
     z-index: 800;
     background-color: rgb(236, 236, 235);
   }
@@ -95,7 +105,8 @@
     width: 50px;
   }
 
-  .navline p {
+  .navline a {
+    text-decoration: none;
     margin: 0;
     font-family: 'Yeseva One', serif;
     line-height: 1;
@@ -141,7 +152,12 @@
   .open {
     opacity: 1;
     height: 35vh;
-    /* padding-top: 8vh; */
+  }
+
+  .overlay-show {
+    display: block;
+    visibility: visible;
+    opacity: 1;
   }
 
   .screen {
