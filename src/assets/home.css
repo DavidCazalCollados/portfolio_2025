@@ -170,12 +170,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 42vh;
+    height: 45vh;
     /* background-color: rebeccapurple; */
   }
 
   .presentation p {
-    font-size: 13.5vw;
+    font-size: 13vw;
   }
 
   .svg-container {
