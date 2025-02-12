@@ -45,58 +45,60 @@
 }
 
 .dropdown-menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  background-color: var(--background-color);
-  opacity: 1;
-  position: absolute;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-  padding: 0;
-  border: 0;
-  height: 0;
-  width: 100%;
-  transition: all .4s ease-in-out;
-  z-index: 800;
+  display: none;
 }
 
 .open {
-  opacity: 1;
-  height: 40vh;
-  padding-top: 8vh;
+  display: none;
 }
 
 .navline {
-  background-color: var(--background-color);
-  width: 100%;
-  height: 8vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-left: 3vh;
-  padding-right: 3vh;
-  z-index: 802;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.04);
+  display: none;
 }
 
-.navline p {
-  margin: 0;
-  font-family: 'Yeseva One', serif;
-  z-index: 802;
-  line-height: 1;
-}
 
 @media (max-width: 420px) {
   .topnav {
-    z-index: 10001;
     height: auto;
-    position: relative;
+    position: fixed;
   }
 
   .navbar-portfolio {
     background-color: none;
+  }
+
+  .navline {
+    background-color: var(--background-color);
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 800;
+    background-color: rgb(236, 236, 235);
+  }
+
+  .name-entete {
+    display: flex;
+    align-items: center;
+    gap: 4%;
+  }
+
+  .name-separation {
+    height: 0.5px;
+    background-color: black;
+    width: 50px;
+  }
+
+  .navline p {
+    margin: 0;
+    font-family: 'Yeseva One', serif;
+    line-height: 1;
+    color: var(--font-color);
+    font-size: 5vw;
+    /* text-transform: uppercase; */
   }
 
   .button-link {
@@ -115,14 +117,31 @@
     height: 100%;
   }
 
-  .screen {
-    display: none;
+  .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: var(--background-color);
+    opacity: 1;
+    position: absolute;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 0;
+    border: 0;
+    height: 0;
+    width: 100%;
+    transition: all .4s ease-in-out;
+    /* z-index: 800; */
   }
 
-  .hamburger {
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-    z-index: 801;
+  .open {
+    opacity: 1;
+    height: 40vh;
+    padding-top: 8vh;
+  }
+
+  .screen {
+    display: none;
   }
 }

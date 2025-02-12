@@ -11,43 +11,40 @@ function Navbar() {
   };
 
     return (
-        <motion.div
-          className="topnav"
-          initial={{ opacity: 0}}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ ease: "easeInOut", duration: 1.5 }}
-        >
-          <nav className="navbar-portfolio">
-            <div className="screen">
-              <Link className="button-link" to="/">HOME</Link>
-              <Link className="button-link" to="/projects">PROJECTS</Link>
-              <Link className="button-link" to="/about">ABOUT</Link>
-              <Link className="button-link" to="/contact">CONTACT</Link>
+      <motion.div
+        className="topnav"
+        initial={{ opacity: 0}}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ ease: "easeInOut", duration: 1.5 }}
+      >
+        <nav className="navbar-portfolio">
+          <div className="screen">
+            <Link className="button-link" to="/">HOME</Link>
+            <Link className="button-link" to="/projects">PROJECTS</Link>
+            <Link className="button-link" to="/about">ABOUT</Link>
+            <Link className="button-link" to="/contact">CONTACT</Link>
+          </div>
+          <div className="navline">
+            <div className="name-entete">
+              <p>David</p>
+              <div className="name-separation"></div>
+              <p>Cazal</p>
             </div>
-              <div className="hamburger">
-                <div className="navline">
-                  <div className="name-entete">
-                    <p>David<br />
-                      Cazal
-                    </p>
-                    {/* <p>Cazal</p> */}
-                  </div>
-                  <svg className="hamburger-icon" onClick={toggleMenu} xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 50 50">
-                    <path
-                      d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"
-                    />
-                  </svg>
-                </div>
-              <div className={`dropdown-menu ${menuOpen ? 'open' : ''}`}>
-                <Link className={`button-link ${menuOpen ? 'show' : ''}`} to="/">HOME</Link>
-                <Link className={`button-link ${menuOpen ? 'show' : ''}`} to="/projects">PROJECTS</Link>
-                <Link className={`button-link ${menuOpen ? 'show' : ''}`} to="/about">ABOUT</Link>
-                <Link className={`button-link ${menuOpen ? 'show' : ''}`} to="/contact">CONTACT</Link>
-              </div>
-            </div>
-          </nav>
-        </motion.div>
+            <svg className="hamburger-icon" onClick={toggleMenu} xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 50 50">
+              <path
+                d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"
+              />
+            </svg>
+          </div>
+          <div className={`dropdown-menu ${menuOpen ? 'open' : ''}`}>
+            <Link className={`button-link ${menuOpen ? 'show' : ''}`} to="/">HOME</Link>
+            <Link className={`button-link ${menuOpen ? 'show' : ''}`} to="/projects">PROJECTS</Link>
+            <Link className={`button-link ${menuOpen ? 'show' : ''}`} to="/about">ABOUT</Link>
+            <Link className={`button-link ${menuOpen ? 'show' : ''}`} to="/contact">CONTACT</Link>
+          </div>
+        </nav>
+      </motion.div>
     );
 }
 

@@ -3,7 +3,6 @@
   width: 8vh;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
-  position: absolute;
   overflow: hidden;
   display: flex;
   text-align: center;
@@ -11,8 +10,6 @@
   height: 100%;
   z-index: 800;
   position: fixed;
-  /* background-color: var(--background-color); */
-  /* box-shadow: rgba(149, 157, 165, 0.1) 0px 8px 24px; */
 }
 
 .scroll-item {
@@ -35,5 +32,22 @@
 @keyframes scroll {
   to {
     transform: translateY(calc(-100% - 129px));
+  }
+}
+
+@media (max-width: 420px) {
+  .leftnav {
+    width: 4.6vh;
+    background-color:rgb(236, 236, 235);
+  }
+
+  .scroll-item {
+    margin: 0;
+    padding: 0;
+  }
+
+  .leftnav ul {
+    margin-right: 1vh;
+    font-size: 3.8vw;
   }
 }

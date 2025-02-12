@@ -1,16 +1,21 @@
 .right-bar {
-  top: 0;
-  right: 0;
-  width: 8vh;
-  writing-mode: vertical-rl;
-  transform: rotate(180deg);
-  position: absolute;
-  overflow: hidden;
-  display: flex;
-  text-align: center;
-  gap: 7rem;
-  height: 100%;
-  z-index: 15;
-  position: fixed;
-  background-color: var(--background-color);
+  display: none;
+}
+
+@media (max-width: 420px) {
+  .right-bar {
+    top: 0;
+    right: 0;
+    width: 4.6vh;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    position: fixed;
+    overflow: hidden;
+    display: flex;
+    text-align: center;
+    z-index: 802;
+    height: 100%;
+    position: fixed;
+    background-color: rgb(236, 236, 235);
+  }
 }
