@@ -26,11 +26,11 @@ function Navbar() {
             <Link className="button-link" to="/contact">CONTACT</Link>
           </div>
           <div className="navline">
-            <div className="name-entete">
+            <Link to="/" className="name-entete">
               <p>David</p>
-              <div className="name-separation"></div>
+              <p className="name-separation"></p>
               <p>Cazal</p>
-            </div>
+            </Link>
             <svg className="hamburger-icon" onClick={toggleMenu} xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 50 50">
               <path
                 d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"
@@ -43,6 +43,7 @@ function Navbar() {
             <Link className={`button-link ${menuOpen ? 'show' : ''}`} to="/about">ABOUT</Link>
             <Link className={`button-link ${menuOpen ? 'show' : ''}`} to="/contact">CONTACT</Link>
           </div>
+          <div className={`overlay ${menuOpen ? 'overlay-show' : ''}`} onClick={toggleMenu}></div>
         </nav>
       </motion.div>
     );
