@@ -107,16 +107,9 @@
   margin: 0;
 }
 
-.presentation-content {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: space-between;
-}
 .svg-container {
   width: 100%;
   stroke: #414141;
-  /* background-color: rgb(201, 136, 136); */
   text-align: justify;
   margin-top: 5%;
 }
@@ -159,24 +152,51 @@
     flex-direction: column;
     font-family: 'Yeseva One', serif;
     width: 100%;
-    padding: 7%;
-    height: auto;
+    padding-top: 7%;
+    padding-left: 7%;
+    padding-right: 7%;
     color: #1a1818;
-    gap: 2%;
-    /* background-color: rebeccapurple; */
+    /* gap: 2%; */
+    height: 50%;
+    /* background-color: red; */
   }
 
   .presentation {
     line-height: 0.9;
-    font-size: 15vw;
     margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 42vh;
+    /* background-color: rebeccapurple; */
   }
 
-  .presentation-content {
-    width: 100vw;
-    height: 100vh;
+  .presentation p {
+    font-size: 13.5vw;
+  }
+
+  .svg-container {
+    /* stroke: #414141; */
+    /* background-color: rgb(201, 136, 136); */
+    text-align: justify;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    /* border: 3px red solid; */
+  }
+
+  .svg-container svg {
+    width: 70%;
+  }
+
+  .svg-container p {
+    margin: 0;
+    line-height: 1.1;
+    font-size: 3.5vw;
+    /* background-color: red; */
   }
 
   .home-right {
@@ -186,25 +206,6 @@
     height: 100%;
     width: 100%;
     /* background-color: blue; */
-  }
-
-  .svg-container {
-    width: 100%;
-    stroke: #414141;
-    /* background-color: rgb(201, 136, 136); */
-    text-align: justify;
-    margin-top: 5%;
-  }
-
-  .svg-container svg {
-    width: 69.5%;
-  }
-
-  .svg-container p {
-    margin: 0;
-    line-height: 1.2;
-    font-size: 3.6vw;
-    /* background-color: red; */
   }
 
 }
