@@ -38,10 +38,10 @@ function Navbar() {
             </svg>
           </div>
           <div className={`dropdown-menu ${menuOpen ? 'open' : ''}`}>
-            <Link className={`button-link ${menuOpen ? 'show' : ''}`} to="/">HOME</Link>
-            <Link className={`button-link ${menuOpen ? 'show' : ''}`} to="/projects">PROJECTS</Link>
-            <Link className={`button-link ${menuOpen ? 'show' : ''}`} to="/about">ABOUT</Link>
-            <Link className={`button-link ${menuOpen ? 'show' : ''}`} to="/contact">CONTACT</Link>
+            <Link className={`button-link ${menuOpen ? 'show' : ''}`} onClick={toggleMenu} to="/">HOME</Link>
+            <Link className={`button-link ${menuOpen ? 'show' : ''}`} onClick={toggleMenu} to="/projects">PROJECTS</Link>
+            <Link className={`button-link ${menuOpen ? 'show' : ''}`} onClick={toggleMenu} to="/about">ABOUT</Link>
+            <Link className={`button-link ${menuOpen ? 'show' : ''}`} onClick={toggleMenu} to="/contact">CONTACT</Link>
           </div>
           <div className={`overlay ${menuOpen ? 'overlay-show' : ''}`} onClick={toggleMenu}></div>
         </nav>

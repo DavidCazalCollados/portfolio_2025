@@ -4,3 +4,12 @@
   margin-right: 15%;
   color: var(--font-color);
 }
+
+@media (max-width: 420px) {
+  .general-disposition {
+    width: auto;
+    margin-left: 4.6vh;
+    margin-right: 4.6vh;
+    /* background-color: red; */
+  }
+}
