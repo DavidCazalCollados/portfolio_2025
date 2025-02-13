@@ -1,4 +1,4 @@
-
+/* For Laptop */
 .home-home {
   height: 100vh;
   display: flex;
@@ -109,97 +109,103 @@
 
 .svg-container {
   width: 100%;
+  height: 10%;
   stroke: #414141;
   text-align: justify;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 5%;
 }
 
+.svg-container svg {
+  height: 8%;
+}
+
 .svg-container p {
-  padding: 2%;
+  /* padding: 2%; */
   margin: 0;
   line-height: 1.2;
-  /* background-color: red; */
-}
-
-.border-content {
-  position: absolute;
-  /* background-color: rgb(255, 255, 255); */
-  width: 29.2%;
-  height: 7.47%;
-}
-
-.button-projects {
-  /* background-color: rgb(63, 75, 75); */
+  width: 93%;
   height: 100%;
   display: flex;
   align-items: center;
 }
 
-@media (max-width: 420px) {
+.border-content {
+  position: absolute;
+  width: 29.2%;
+  height: 7.47%;
+}
 
-  .home-home {
-    height: 100vh;
-    padding-top: 8vh;
-    padding-bottom: 7vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+.button-projects {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
 
-  .home-left {
-    display: flex;
-    flex-direction: column;
-    font-family: 'Yeseva One', serif;
-    width: 100%;
-    padding-top: 7%;
-    padding-left: 7%;
-    padding-right: 7%;
-    color: #1a1818;
-    height: 50%;
-  }
+/* for phones (max width 420px) */
 
-  .presentation {
-    line-height: 0.9;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 50vh;
-  }
+/* Top */
+.home-phone {
+  /* background-color: rebeccapurple; */
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 11vh;
+  padding-bottom: 4vh;
+  padding-left: 7vw;
+  padding-right: 7vw;
+}
 
-  .presentation p {
-    font-size: 13vw;
-  }
+.home-phone-top {
+  /* background-color: red; */
+  height: 33%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
 
-  .svg-container {
-    text-align: justify;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* border: 3px red solid; */
-  }
+.home-phone-top p {
+  font-family: 'Yeseva One', serif;
+}
 
-  .svg-container svg {
-    width: 70%;
-  }
+.presentation-phone p {
+  display: flex;
+  flex-direction: column;
+  color: var(--font-color);
+  font-size: 12vw;
+  margin: 0;
+  line-height: 0.95;
+}
 
-  .svg-container p {
-    margin: 0;
-    line-height: 1.1;
-    font-size: 3.5vw;
-    /* background-color: red; */
-  }
+.svg-container-phone {
+  height: 12vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .home-right {
-    display: flex;
-    justify-content: end;
-    position: relative;
-    height: 100%;
-    width: 100%;
-    /* background-color: blue; */
-  }
+.svg-container-phone p {
+  font-size: 3vw;
+  width: 100%;
+  margin: 0;
+  padding-left: 4%;
+  padding-right: 4%;
+}
 
+.border-phone-text {
+  position: absolute;
+  /* background-color: rebeccapurple; */
+}
+
+/* Middle */
+.home-phone-middle {
+  background-color: bisque;
+  height: 33%;
+}
+
+.home-phone-bottom {
+  background-color: aqua;
+  height: 33%;
 }
