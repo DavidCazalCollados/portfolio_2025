@@ -156,12 +156,12 @@
 }
 
 .home-phone-top {
-  height: 29%;
+  height: 32%;
   overflow-x: hidden;
   overflow-y: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 5%;
 }
 
 .home-phone-top p {
@@ -194,7 +194,7 @@
 
 /* Middle */
 .home-phone-middle {
-  height: 33%;
+  height: 30%;
   font-size: 5vw;
   font-family: 'Yeseva One', serif;
   color: var(--font-color);
