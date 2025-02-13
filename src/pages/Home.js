@@ -51,7 +51,19 @@ function Home() {
             </div>
           </div>
           <div className='home-phone-middle'>
-
+            <motion.div
+              className='button-projects-phone'
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{
+                ease: "easeInOut",
+                duration: 1,
+                delay: 1 }}
+            >
+              <Link to='/projects'>
+                <button className="button-52">Projects</button>
+              </Link>
+            </motion.div>
           </div>
           <div className='home-phone-bottom'>
 
