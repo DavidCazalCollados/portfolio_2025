@@ -203,9 +203,9 @@
 /* Bottom part */
 
 .home-phone-bottom {
-  height: 40%;
   display: flex;
   position: relative;
+  /* background-color: aqua; */
 }
 
 .red-square-phone {
