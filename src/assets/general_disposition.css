@@ -8,8 +8,9 @@
 @media (max-width: 420px) {
   .general-disposition {
     width: auto;
-    height: 100vh;
+    height: 95vh;
     margin-left: 4.6vh;
     margin-right: 4.6vh;
+    /* background-color: red; */
   }
 }
