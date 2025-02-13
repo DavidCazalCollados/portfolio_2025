@@ -138,6 +138,10 @@
 
 /* for phones (max width 420px) */
 
+.home-phone-position {
+  position: fixed;
+}
+
 /* Top */
 .home-phone {
   height: 100vh;

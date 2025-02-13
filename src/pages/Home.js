@@ -12,9 +12,8 @@ function Home() {
   const matches = useMediaQuery('(max-width: 420px)');
 
   return (
-    <div className="general-disposition">
+    <div className={`general-disposition ${matches ? 'home-phone-position' : ''}`}>
       {matches ? (
-
         <section className='home-phone'>
           <div className='home-phone-top'>
             <div className="presentation-phone">
