@@ -164,10 +164,13 @@
   height: 33%;
   overflow-x: hidden;
   overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 6%;
 }
 
 .home-phone-top p {
-  font-family: 'Yeseva One', serif;
+  font-family: 'Yeseva One', serif
 }
 
 .presentation-phone p {
@@ -180,32 +183,27 @@
 }
 
 .svg-container-phone {
-  height: 12vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .svg-container-phone p {
   font-size: 3vw;
   width: 100%;
   margin: 0;
-  padding-left: 4%;
-  padding-right: 4%;
-}
-
-.border-phone-text {
-  position: absolute;
-  /* background-color: rebeccapurple; */
+  padding: 3%;
+  border: 0.5px black solid;
 }
 
 /* Middle */
 .home-phone-middle {
-  background-color: bisque;
+  /* background-color: bisque; */
   height: 33%;
 }
 
 .home-phone-bottom {
-  background-color: aqua;
+  /* background-color: aqua; */
   height: 33%;
 }

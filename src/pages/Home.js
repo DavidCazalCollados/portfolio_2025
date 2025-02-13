@@ -41,28 +41,6 @@ function Home() {
               </motion.p>
             </div>
             <div className="svg-container-phone">
-              <svg
-                className='border-phone-text'
-                width="241"
-                height="50"
-                xmlns="http://www.w3.org/2000/svg"
-                preserveAspectRatio='none'
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-              >
-                <motion.path
-                  d="M0,0 H241 V50 H0 Z"
-                  stroke="black"
-                  strokeWidth="1"
-                  fill="none"
-                  initial={{ pathLength: 0 }}
-                  animate={{ pathLength: 1 }}
-                  transition={{
-                    duration: 1.5,
-                    ease: "easeInOut",
-                  }}
-                />
-              </svg>
               <motion.p
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
