@@ -144,7 +144,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background-color: aqua; */
   }
 
   .home-left {
@@ -156,9 +155,7 @@
     padding-left: 7%;
     padding-right: 7%;
     color: #1a1818;
-    /* gap: 2%; */
     height: 50%;
-    /* background-color: red; */
   }
 
   .presentation {
@@ -171,7 +168,6 @@
     flex-direction: column;
     justify-content: center;
     height: 50vh;
-    /* background-color: rebeccapurple; */
   }
 
   .presentation p {
