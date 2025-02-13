@@ -66,7 +66,41 @@ function Home() {
             </motion.div>
           </div>
           <div className='home-phone-bottom'>
-
+            <DessinComplet />
+            <motion.div
+              className='red-square-phone'
+              initial={{ opacity: 0, top: "-15%" }}
+              animate={{ opacity: 1, top: "12%" }}
+              transition={{
+                ease: "easeInOut",
+                duration: 1,
+                delay: 1
+              }}
+              style={{
+                top: "12%"
+              }}
+            >
+              <Link className="about-link-home-phone" to="/about">
+                About
+              </Link>
+            </motion.div>
+            <motion.div
+              className='blue-square-phone'
+              initial={{ opacity: 0, top: "50%" }}
+              animate={{ opacity: 1, top: "40%" }}
+              transition={{
+                ease: "easeInOut",
+                duration: 1,
+                delay: 1
+              }}
+              style={{
+                top: "40%"
+              }}
+            >
+              <Link className="contact-link-home-phone" to="/contact">
+                Contact
+              </Link>
+            </motion.div>
           </div>
         </section>
 

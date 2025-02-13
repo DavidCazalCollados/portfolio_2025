@@ -1,8 +1,12 @@
 import React from 'react'
 import { motion } from "framer-motion";
+import useMediaQuery from '@mui/material/useMediaQuery';
 import "../../assets/draw.css"
 
 export default function DessinComplet() {
+
+  const matches = useMediaQuery('(max-width: 420px)');
+
   const pathData = [
 
     {
@@ -23,8 +27,8 @@ export default function DessinComplet() {
     <div>
       <svg
         className='draw-container'
-        width="30vw"
-        height="42vh"
+        width={matches ? '100%' : "30vw"}
+        height={matches ? '100%' : "42vh" }
         viewBox="0 0 405 292"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
