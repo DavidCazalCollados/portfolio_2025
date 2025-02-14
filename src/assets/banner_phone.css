@@ -1,0 +1,11 @@
+@media (max-width: 500px) {
+  .banner-filmdash {
+    height: 45vh;
+    width: 100%;
+    /* margin-bottom: 15vh; */
+  }
+
+  .background-banner {
+    width: 100%;
+  }
+}

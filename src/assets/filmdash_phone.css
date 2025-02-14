@@ -1,0 +1,19 @@
+@media(max-width: 500px) {
+  /* Banner */
+  .filmdash-container {
+    /* display: flex; */
+    width: auto;
+    margin-left: 4.6vh;
+    margin-right: 4.6vh;
+    overflow-x: hidden;
+    /* background-color: red; */
+  }
+
+  .gap-section {
+    display: flex;
+    flex-direction: column;
+    gap: 18vh;
+    padding-left: 7vw;
+    padding-right: 7vw;
+  }
+}

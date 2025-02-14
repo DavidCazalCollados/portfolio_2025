@@ -12,6 +12,8 @@ import HoverVideoPlayer from 'react-hover-video-player';
 
 import '../../assets/banner.css';
 import '../../assets/filmdash.css';
+import '../../assets/filmdash_phone.css';
+import '../../assets/banner_phone.css';
 import '../../assets/button_try.css'
 import "../../assets/general_disposition.css";
 
@@ -214,7 +216,7 @@ function FilmDash() {
       </section>
 
       <motion.div
-        className='general-disposition gap-section'
+        className='gap-section'
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1, ease: "easeInOut", delay: 1 }}
