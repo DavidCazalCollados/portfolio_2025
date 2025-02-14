@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from "react-router";
 import { motion } from "motion/react";
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 import DessinTv from "../components/DessinTv";
 import BorderProjects from "../components/BorderProjects";
@@ -10,18 +11,18 @@ import "../assets/general_disposition.css"
 import "../assets/background_filmdash_button.css"
 
 function Projects() {
+  const matches = useMediaQuery('(max-width: 500px)');
 
   const [isHovered, setIsHovered] = useState(false);
 
   const hoverStylesTitle = {
-    scale: isHovered ? "1.1" : "1",
-    color: isHovered ? "#ffe372f0" : "#ffe3729e"
+    scale: isHovered ? `${matches ? "1" : "1.1"}` : "1",
+    color: isHovered ? "#ffe372f0" : `${matches ? "#ffe372f0" : "#ffe3729e"}`
   };
 
   const hoverStylesBackground = {
     top: isHovered ? "0%" : "3.5%",
     left: isHovered ? "0.4%" : "2.5%",
-    borderRadius: isHovered ? "1.5%" : "7px"
   }
 
   return(
