@@ -11,9 +11,66 @@
 
   .gap-section {
     display: flex;
+    width: 100%;
     flex-direction: column;
     gap: 18vh;
     padding-left: 7vw;
     padding-right: 7vw;
+  }
+
+  .about-section {
+    /* background-color: aquamarine; */
+    justify-content: auto;
+    height: auto;
+  }
+
+  .about-title p{
+    font-size: 10vw;
+  }
+
+  .intro-section {
+    justify-content: auto;
+    gap: 0;
+  }
+
+  .intro-filmdash {
+    /* display: flex; */
+    align-items: center;
+    gap: 10%;
+    height: 35vh;
+    width: auto;
+  }
+
+  .presentation-picture-filmdash {
+    height: 24vh;
+    width: 70%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+
+  .begin-presentation-filmdash {
+    font-size: 3.6vw;
+    font-weight: 200;
+    padding-top: 2%;
+    line-height: 1.35;
+    padding-bottom: 2%;
+  }
+
+  .development-filmdash {
+    gap: 10%;
+    align-items: start;
+    height: 25vh;
+  }
+
+  .development-picture-filmdash {
+    height: 100%;
+    width: 100%;
+    clip-path: none;
+  }
+
+  .development-text-filmdash {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    font-size: 2.65vw;
   }
 }
