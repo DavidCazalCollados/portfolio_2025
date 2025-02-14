@@ -14,6 +14,7 @@ function Projects() {
   const matches = useMediaQuery('(max-width: 500px)');
 
   const [isHovered, setIsHovered] = useState(false);
+  const [isTouched, setIsTouched] = useState(false)
 
   const hoverStylesTitle = {
     scale: isHovered ? `${matches ? "1" : "1.1"}` : "1",
@@ -23,6 +24,15 @@ function Projects() {
   const hoverStylesBackground = {
     top: isHovered ? "0%" : "3.5%",
     left: isHovered ? "0.4%" : "2.5%",
+  }
+
+  const touchStylesTitle = {
+    scale: isTouched ? "1.1" : "1"
+  }
+
+  const touchStylesBackground = {
+    top: isTouched ? `${matches ? "0%" : "3.5%"}` : "3.5%",
+    left: isTouched ? `${matches ? "0.4%" : "2.5%"}` : "2.5%"
   }
 
   return(
@@ -52,6 +62,8 @@ function Projects() {
           <Link
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
+            onTouchStart={() => setIsTouched(true)}
+            onTouchEnd={() => setIsTouched(false)}
             to="/projects/filmdash"
             className='filmdash-project filmdash-button'
           >
