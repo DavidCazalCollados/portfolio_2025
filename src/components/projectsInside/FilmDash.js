@@ -216,7 +216,7 @@ function FilmDash() {
       </section>
 
       <motion.div
-        className='general-disposition gap-section'
+        className='gap-section'
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1, ease: "easeInOut", delay: 1 }}
