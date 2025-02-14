@@ -12,6 +12,8 @@ import HoverVideoPlayer from 'react-hover-video-player';
 
 import '../../assets/banner.css';
 import '../../assets/filmdash.css';
+import '../../assets/filmdash_phone.css';
+import '../../assets/banner_phone.css';
 import '../../assets/button_try.css'
 import "../../assets/general_disposition.css";
 
