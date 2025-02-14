@@ -6,7 +6,7 @@ import { motion } from "motion/react"
 
 function Navbar() {
 
-  const matches = useMediaQuery('(max-width: 420px)');
+  const matches = useMediaQuery('(max-width: 500px)');
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {

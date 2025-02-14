@@ -9,7 +9,7 @@ import "../assets/general_disposition.css";
 
 function Home() {
 
-  const matches = useMediaQuery('(max-width: 420px)');
+  const matches = useMediaQuery('(max-width: 500px)');
 
   return (
     <div className={`general-disposition ${matches ? 'home-phone-position' : ''}`}>

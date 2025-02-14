@@ -5,7 +5,7 @@ import "../../assets/draw.css"
 
 export default function DessinComplet() {
 
-  const matches = useMediaQuery('(max-width: 420px)');
+  const matches = useMediaQuery('(max-width: 500px)');
 
   const pathData = [
 
