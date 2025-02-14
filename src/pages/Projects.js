@@ -31,8 +31,8 @@ function Projects() {
   }
 
   const touchStylesBackground = {
-    top: isTouched ? `${matches ? "0%" : "3.5%"}` : "3.5%",
-    left: isTouched ? `${matches ? "0.4%" : "2.5%"}` : "2.5%"
+    top: isTouched ? "0%" : "3.5%",
+    left: isTouched ? "0.4%" : "2.5%"
   }
 
   return(
