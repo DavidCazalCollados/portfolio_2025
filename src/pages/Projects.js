@@ -31,9 +31,19 @@ function Projects() {
   }
 
   const touchStylesBackground = {
-    top: isTouched ? "0%" : "3.5%",
-    left: isTouched ? "0.4%" : "2.5%"
+    top: isTouched ? `${matches ? "0%" : "3.5%"}` : "3.5%",
+    left: isTouched ? `${matches ? "0.4%" : "2.5%"}` : "2.5%"
   }
+
+  const combinedStylesTitle = {
+    ...hoverStylesTitle,
+    ...touchStylesTitle
+  };
+
+  const combinedStylesBackground = {
+    ...hoverStylesBackground,
+    ...touchStylesBackground
+  };
 
   return(
     <div className="general-disposition project-disposition">
@@ -68,7 +78,7 @@ function Projects() {
             className='filmdash-project filmdash-button'
           >
             <motion.h4
-              style={hoverStylesTitle}
+              style={combinedStylesTitle}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 2, ease: "easeInOut" }}
@@ -79,7 +89,7 @@ function Projects() {
             <DessinTv />
             <motion.div
               className='test-background-filmdash'
-              style={hoverStylesBackground}
+              style={combinedStylesBackground}
               // Animation
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
